@@ -32,7 +32,7 @@ title: Gengo API Overview
 
 ## Translation flow
 
-The Gengo API allows you to connect your app to Gengo, and order human translation without needing to use a manual web interface. Because human translation is not instant, our API is asynchronous (a bit like <a href='http://mturk.com'>Mechanical Turk</a>). This means that unlike some other web APIs like <a href='http://flickr.com'>Flickr</a> or <a href='http://twitter.com'>Twitter</a>, you need to allow time for translators to complete their translations.
+The Gengo API allows you to connect your app to Gengo, and order human translation without needing to use a manual web interface. Because human translation is not instant, our API is asynchronous (a bit like [Mechanical Turk](http://mturk.com)). This means that unlike some other web APIs like [Flickr](http://flickr.com) or [Twitter](http://twitter.com), you need to allow time for translators to complete their translations.
 
 
 ## What happens behind the scenes
@@ -44,7 +44,7 @@ Gengo's translators are notified of new jobs when they come in, and work on tran
 
 ## Methodology
 
-The Translate API attempts to follow a <a href='http://en.wikipedia.org/wiki/Representational_state_transfer'>REST-based architecture</a>.  The main resource (entry-point) revolves around jobs, and state changes on jobs should be done with PUT calls on the desired resource.  For situations where certain HTTP methods can not be used (such as PUT or DELETE), methods can be overridden with the "_method" parameter.
+The Translate API attempts to follow a [REST-based architecture](http://en.wikipedia.org/wiki/Representational_state_transfer).  The main resource (entry-point) revolves around jobs, and state changes on jobs should be done with PUT calls on the desired resource.  For situations where certain HTTP methods can not be used (such as PUT or DELETE), methods can be overridden with the "_method" parameter.
 
 
 ## Ordering jobs
@@ -79,7 +79,7 @@ Sometimes you might want to include text within a job that you do not need to be
 
 ## What do the different levels (Standard, Pro, Ultra) mean?
 
-Please see our <a href='http://gengo.com/help/quality_policy'>Quality Policy</a> page for more information.
+Please see our [Quality Policy](http://gengo.com/help/quality_policy) page for more information.
 
 
 ## Cancelling jobs
@@ -125,7 +125,7 @@ If a job requires corrections, you can request them using the <a href='/v2/trans
 
 ### Rejecting jobs
 
-If you are unhappy with a translation from myGengo, you have the opportunity to reject the job and either receive a credits refund, or pass the job onto a different translator. For more details on what you can expect from our translation, please visit our <a href='http://gengo.com/help/quality_policy/'>Quality Policy</a> page, which outlines what constitutes a fair or unfair rejection.
+If you are unhappy with a translation from myGengo, you have the opportunity to reject the job and either receive a credits refund, or pass the job onto a different translator. For more details on what you can expect from our translation, please visit our [Quality Policy](http://gengo.com/help/quality_policy/) page, which outlines what constitutes a fair or unfair rejection.
 
 All rejections are reviewed by our staff, and we take each one seriously - normally we will contact the translator and review what has gone wrong with that particular translation. While we are obviously happy to uphold fair rejections, if you persistently reject jobs without reason, your account will be suspended as this kind of behaviour is unfair to the translator and time-consuming for us.
 
@@ -157,14 +157,12 @@ All API calls require the api_key parameter to be sent.  Authenticated calls mus
 
 For example, an API call might send the following key-value pairs:
 
-<pre class='code'>
-array(
-'api_key' => ...,
-'_method'  => 'put',
-'api_sig' => ...
-'data' => ...
-)
-</pre>
+    array(
+        'api_key' => ...,
+        '_method'  => 'put',
+        'api_sig' => ...
+        'data' => ...
+    )
 
 A GET call on the other hand might have the following query string:
 ?api_key=...&api_sig=...&lc_src=..

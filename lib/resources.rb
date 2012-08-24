@@ -25,16 +25,8 @@ module GitHub
         css_class = (status == 204 || status == 404) ? 'headers no-response' : 'headers'
         lines = ["Status: #{STATUSES[status]}"]
         head.each do |key, value|
-          case key
-            when :pagination
-              lines << 'Link: <https://api.github.com/resource?page=2>; rel="next",'
-              lines << '      <https://api.github.com/resource?page=5>; rel="last"'
-            else lines << "#{key}: #{value}"
-          end
+          lines << "#{key}: #{value}"
         end
-
-        lines << "X-RateLimit-Limit: 5000"
-        lines << "X-RateLimit-Remaining: 4999"
 
         %(<pre class="#{css_class}"><code>#{lines * "\n"}</code></pre>\n)
       end
@@ -47,7 +39,8 @@ module GitHub
             h
           when Array
             key
-          else Resources.const_get(key.to_s.upcase)
+          else
+            Resources.const_get(key.to_s.upcase)
         end
 
         hash = yield hash if block_given?
@@ -62,6 +55,131 @@ module GitHub
         hs + %(<pre class="highlight"><code>) + res + "</code></pre>"
       end
     end
+
+    OK_RESPONSE = {
+        "opstat" => "ok",
+    }
+
+    OK_EMPTY_RESPONSE = OK_RESPONSE.merge({
+        "response" => {}
+    })
+
+    LANG_PAIRS = OK_RESPONSE.merge(
+        "response" =>
+            [
+                {"lc_src"=>"ja", "lc_tgt"=>"en", "tier"=>"machine", "unit_price"=>"0.0"},
+                {"lc_src"=>"ja", "lc_tgt"=>"es", "tier"=>"machine", "unit_price"=>"0.0"},
+                {"lc_src"=>"ja", "lc_tgt"=>"en", "tier"=>"standard", "unit_price"=>"0.0300"},
+                {"lc_src"=>"ja", "lc_tgt"=>"es", "tier"=>"standard", "unit_price"=>"0.0300"},
+                {"lc_src"=>"ja", "lc_tgt"=>"en", "tier"=>"pro", "unit_price"=>"0.0600"},
+                {"lc_src"=>"ja", "lc_tgt"=>"es", "tier"=>"pro", "unit_price"=>"0.0600"},
+                {"lc_src"=>"ja", "lc_tgt"=>"en", "tier"=>"ultra", "unit_price"=>"0.0900"},
+                {"lc_src"=>"ja", "lc_tgt"=>"es", "tier"=>"ultra", "unit_price"=>"0.0900"}
+            ]
+    )
+
+    JOBS_POST = OK_RESPONSE.merge(
+        "response" => {
+            "order_id"=>"109655",
+            "job_count"=>3,
+            "credits_used"=>"0.30",
+            "currency"=>"USD"}
+    )
+
+    JOBS_ORDER_GET = OK_RESPONSE.merge(
+        "response"=>{
+            "order"=>{
+                "total_credits"=>"0.30",
+                "currency"=>"USD",
+                "as_group"=>0,
+                "total_units"=>6,
+                "jobs_available"=>["243646", "243647", "243645"],
+                "total_jobs"=>"3"
+            }
+        }
+    )
+
+    JOB_GET = OK_RESPONSE.merge(
+        {
+            "response"=>{
+                "job"=>{
+                    "job_id"=>"384985",
+                    "slug"=>"APIJobtest",
+                    "body_src"=>"plop!",
+                    "lc_src"=>"en",
+                    "lc_tgt"=>"ja",
+                    "unit_count"=>"1",
+                    "tier"=>"standard",
+                    "credits"=>"0.05",
+                    "status"=>"available",
+                    "eta"=>"",
+                    "ctime"=>1313475693,
+                    "auto_approve"=>"0",
+                    "custom_data"=>"1234567"
+                }
+            }
+        }
+    )
+
+    ACCOUNT_STATS = OK_RESPONSE.merge(
+        "response" => {
+            "credits_spent" => "1023.31",
+            "user_since" => 1234089500
+        }
+    )
+
+    ACCOUNT_BALANCE = OK_RESPONSE.merge(
+        "response" => {
+            "credits" => "25.32"
+        }
+    )
+
+    REVISIONS_GET = OK_RESPONSE.merge(
+        "response" => {
+            "job_id" => '...',
+            "revisions" => [
+                {"ctime" => '...', "rev_id" => '...'},
+                {"ctime" => '...', "rev_id" => '...'},
+                {"ctime" => '...', "rev_id" => '...'},
+                '...'
+            ]
+        }
+    )
+
+    REVISION_GET = OK_RESPONSE.merge(
+        "response" => {
+            "revision" => {
+                'ctime' => '...',
+                'body_tgt' => '...'
+            }
+        }
+    )
+
+    FEEDBACK_GET = OK_RESPONSE.merge(
+        "response" => {
+            "feedback" => {
+                'rating' => '3.0',
+                'for_translator' => '...'
+            }
+        }
+    )
+
+    COMMENTS_GET = OK_RESPONSE.merge(
+        "response" => {
+            "thread" => [
+                {
+                    "body" => "....",
+                    "author" => "translator",
+                    "ctime" => 1266322028
+                },
+                {
+                    "body" => "....",
+                    "author" => "customer",
+                    "ctime" => 1266324432
+                }
+                ]
+        }
+    )
 
     USER = {
       "login"        => "octocat",

@@ -58,5 +58,5 @@ title: API Methods | Gengo API
 [translate/service/quote __(POST)__](/v2/service/#quote-post)
 : Returns credit quote and unit count for text based on content, tier, and language pair for job or jobs submitted.
 
-[translate/service/quote/file __(POST)__](/v2/service/#quote_file-post)
+[translate/service/quote/file __(POST)__](/v2/service/#quote-files-post)
 : Uploads files to Gengo and returns a quote for each file, with an identifier for when client is ready to place the actual order. Price quote is based on content, tier, and language pair.

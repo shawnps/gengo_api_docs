@@ -181,6 +181,193 @@ module GitHub
         }
     )
 
+    JOB_GROUP_GET = OK_RESPONSE.merge(
+        "response" => {
+            "jobs" => [
+                {"job_id" => "5343"},
+                {"job_id" => "5344"},
+                {"job_id" => "5345"},
+                {"job_id" => "5346"}
+            ],
+            "ctime" => 319238102
+        }
+    )
+
+    JOBS_POST_ALL_NEW = OK_RESPONSE.merge(
+        "response" => {
+            "group_id" => 23015,
+            "order_id" => "139370",
+            "job_count" => "10",
+            "credits_used" => "100.45",
+            "currency" => "USD"
+        }
+    )
+
+    JOBS_POST_ALL_OLD = OK_RESPONSE.merge(
+        "response" => {
+            "jobs" => {
+                "job_1" => [
+                    {"job_id" => "352691"},
+                    {"job_id" => "352692"}
+                ],
+                "job_2" => [
+                    {"job_id" => "352693"}
+                ]
+            }
+        }
+    )
+
+    JOBS_POST_MIX = OK_RESPONSE.merge(
+        "response" => {
+            "jobs" => {
+                "job_1" => [
+                    {"job_id" => "352691" },
+                    {"job_id" => "352692"}
+                ],
+                "job_2" => [
+                    {"job_id" => "352693" }
+                ]
+            },
+            "order_id" => "139370",
+            "job_count" => "5",
+            "credits_used" => "14.50",
+            "currency" => "USD"
+        }
+    )
+
+    JOBS_GET = OK_RESPONSE.merge(
+
+        "response" => [
+            {"job_id" => 123, 'ctime' => '...'},
+            {"job_id" => 425, 'ctime' => '...'},
+            {"job_id" => 274, 'ctime' => '...'}
+        ]
+    )
+
+    JOBS_BY_IDS_GET = OK_RESPONSE.merge(
+
+        "response" => {
+            "jobs" => [
+                {
+                    "eta" => "",
+                    "status" => "available",
+                    "auto_approve" => "0",
+                    "lc_tgt" => "ja",
+                    "lc_src" => "en",
+                    "unit_count" => "5",
+                    "body_src" => "This is a short story.",
+                    "credits" => "0.25",
+                    "tier" => "standard",
+                    "ctime" => 1317279055,
+                    "job_id" => "1"
+                },
+                {
+                    "eta" => "",
+                    "status" => "available",
+                    "auto_approve" => "0",
+                    "lc_tgt" => "ja",
+                    "lc_src" => "en",
+                    "unit_count" => "5",
+                    "body_src" => "This is a short story.",
+                    "credits" => "0.25",
+                    "tier" => "standard",
+                    "ctime" => 1317279055,
+                    "job_id" => "2"
+                },
+            ]
+        }
+    )
+
+    LANG_PAIRS_GET = OK_RESPONSE.merge(
+        "response" => [
+            {
+                "lc_src" => "de",
+                "lc_tgt" => "en",
+                "tier" => "standard",
+                "unit_price" => "0.0500"
+            },
+            {
+                "lc_src" => "de",
+                "lc_tgt" => "en",
+                "tier" => "pro",
+                "unit_price" => "0.1000"
+            },
+            {
+                "lc_src" => "de",
+                "lc_tgt" => "en",
+                "tier" => "ultra",
+                "unit_price" => "0.1500"
+            }
+        ]
+    )
+
+    LANGS_GET = OK_RESPONSE.merge(
+        "response" => [
+            {
+                "language" => "English",
+                "localized_name" => "English",
+                "lc" => "en",
+                "unit_type" => "word"
+            },
+            {
+                "language" => "Japanese",
+                "localized_name" => "\u65e5\u672c\u8a9e",
+                "lc" => "ja",
+                "unit_type" => "character"
+            },
+            {
+                "language" => "Spanish (Spain)",
+                "localized_name" => "Espa\u00f1ol",
+                "lc" => "es",
+                "unit_type" => "word"
+            }
+        ]
+    )
+
+    QUOTE_POST = OK_RESPONSE.merge(
+        "response" => {
+            "jobs" => [
+                {"job_1" => {
+                    "unit_count" => 324,
+                    "credits" => 16.20
+                }},
+                {"job_2" => {
+                    "unit_count" => 42,
+                    "credits" => 4.20
+                }}
+            ]
+        }
+    )
+
+    QUOTE_FILES_POST = OK_RESPONSE.merge(
+        "response"=>{
+            "jobs"=>{
+                "job_1"=>{
+                    "unit_count"=>0,
+                    "credits"=>"0.00",
+                    "eta"=>0,
+                    "currency"=>"USD",
+                    "identifier"=>"49427e41a1b6cefd7444b0d27ec165e7481658791885e71b7602c6babfc80b77",
+                    "images"=>[],
+                    "type"=>"file",
+                    "lc_src"=>"en",
+                    "body"=>"",
+                    "title"=>"video_on_demand.txt"
+                    },
+                "job_2"=>{
+                    "unit_count"=>0,
+                    "credits"=>"0.00",
+                    "eta"=>0,
+                    "currency"=>"USD",
+                    "identifier"=>"4fd1551c3a5628f795d645394bfcd0a5442e4e7ae60ad1f163424bdeb8420df4",
+                    "images"=>[],
+                    "type"=>"file",
+                    "lc_src"=>"en",
+                    "body"=>"",
+                    "title"=>"japanese_file.docx"},
+                "job_3"=>{"err"=>{"code"=>1802, "filename"=>"sushi_en.doc", "key"=>"job_3"}}}}
+    )
+
     USER = {
       "login"        => "octocat",
       "id"           => 1,

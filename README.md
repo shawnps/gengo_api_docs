@@ -1,6 +1,6 @@
-# developer.github.com
+# Gengo API documentation
 
-This is a GitHub API resource built with [nanoc][nanoc].
+This project is forked from the GitHub API resource built with [nanoc][nanoc].
 
 All submissions are welcome. To submit a change, fork this repo, commit your changes, and send us a [pull request](http://help.github.com/send-pull-requests/).
 
@@ -19,33 +19,6 @@ You can see the available commands with nanoc:
 Nanoc has [some nice documentation](http://nanoc.stoneship.org/docs/3-getting-started/) to get you started.  Though if you're mainly concerned with editing or adding content, you won't need to know much about nanoc.
 
 [nanoc]: http://nanoc.stoneship.org/
-
-## Styleguide
-
-Not sure how to structure the docs?  Here's what the structure of the
-API docs should look like:
-
-    # API title
-
-    ## API endpoint title
-
-        [VERB] /path/to/endpoint.json
-
-    ### Parameters
-
-    name
-    : description
-
-    ### Input (request json body)
-
-    <%= json :field => "sample value" %>
-
-    ### Response
-
-    <%= headers 200, :pagination => true, 'X-Custom-Header' => "value" %>
-    <%= json :resource_name %>
-
-**Note**: We're using [Kramdown Markdown extensions](http://kramdown.rubyforge.org/syntax.html), such as definition lists.
 
 ### JSON Responses
 

@@ -73,6 +73,9 @@ type
 identifier _(required if type = 'file')_
 : _String_ of the identifier returned as a response from the file quote method (e.g. identifer = '2ea3a2dbea3be97375ceaf03200fb184')
 
+glossary_id _(optional)_
+: _String_ id of the glossary that you want to use.
+
 force _(optional) 1 (true) / 0 (false - default)_
 : _Integer_ of whether or not to override lazy loading and force a new translation. Read about lazy loading here.
 

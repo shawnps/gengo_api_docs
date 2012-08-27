@@ -368,6 +368,40 @@ module GitHub
                 "job_3"=>{"err"=>{"code"=>1802, "filename"=>"sushi_en.doc", "key"=>"job_3"}}}}
     )
 
+    GLOSSARY_LIST_GET = OK_RESPONSE.merge(
+        "response"=>[
+            {
+                "status"=>1,
+                "source_language_code"=>"en-US",
+                "description"=>nil,
+                "source_language_id"=>8,
+                "title"=>"1342666627_50110_en_ja_glossary.csv",
+                "target_languages"=>[[14, "ja"]],
+                "is_public"=>false,
+                "unit_count"=>2,
+                "id"=>115,
+                "customer_user_id"=>50110,
+                "ctime"=>"2012-07-19 02:57:10.526565"
+            }
+        ]
+    )
+
+    GLOSSARY_GET = OK_RESPONSE.merge(
+        "response"=>{
+            "status"=>1,
+            "source_language_code"=>"en-US",
+            "description"=>nil,
+            "source_language_id"=>8,
+            "title"=>"1342666627_50110_en_ja_glossary.csv",
+            "target_languages"=>[[14, "ja"]],
+            "is_public"=>false,
+            "unit_count"=>2,
+            "id"=>115,
+            "customer_user_id"=>50110,
+            "ctime"=>"2012-07-19 02:57:10.526565"
+        }
+    )
+
     USER = {
       "login"        => "octocat",
       "id"           => 1,

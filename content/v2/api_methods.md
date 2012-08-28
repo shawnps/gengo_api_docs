@@ -10,6 +10,12 @@ title: API Methods | Gengo API
 [account/balance __(GET)__](/v2/account/#balance-get)
 : Retrieves account balance in credits.
 
+[translate/glossary __(GET)__](/v2/glossary/#glossary-get)
+: Retrieves a list of glossaries that belongs to the authenticated user
+
+[translate/glossary/{id} __(GET)__](/v2/glossary/#glossary-get-by-id-get)
+: Retreives a glossary by Id
+
 [translate/job/{id} __(GET)__](/v2/job/#job-get)
 : Retrieves a specific job.
 

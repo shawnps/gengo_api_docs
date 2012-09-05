@@ -6,11 +6,11 @@ title: Glossary | Gengo API
 
 This describes the endpoints that deal with Glossaries on the Gengo API.
 
+* [Glossaries __(GET)__](#glossaries-get)
 * [Glossary __(GET)__](#glossary-get)
-* [Glossary by id __(GET)__](#glossary-get-by-id-get)
 
 
-## Glossary (GET)
+## Glossaries (GET)
 
 __Summary__
 : Retrieves a list of glossaries that belongs to the authenticated user
@@ -46,7 +46,7 @@ __Response__
 <%= json :glossary_list_get %>
 
 
-## Glossary get by ID (GET)
+## Glossary (GET)
 
 __Summary__
 : Retreives a glossary by Id

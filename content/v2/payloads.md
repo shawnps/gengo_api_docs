@@ -76,6 +76,9 @@ identifier _(required if type = 'file')_
 glossary_id _(optional)_
 : _String_ id of the glossary that you want to use.
 
+position _(optional)_
+: _String_ of the position of the job in a group of jobs. When the job group is displayed to translators, this ensures that ordering is maintained. This parameter is ignored when a group of jobs is submitted without as_group or if the string of the position cannot be casted into an integer.
+
 force _(optional) 1 (true) / 0 (false - default)_
 : _Integer_ of whether or not to override lazy loading and force a new translation. Read about lazy loading here.
 

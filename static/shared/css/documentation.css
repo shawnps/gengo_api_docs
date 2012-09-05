@@ -22,7 +22,7 @@ p {
 
 h1 {
   font-size: 20px;
-  border-bottom: 1px solid #cccccc;
+  border-bottom: 1px solid #ddd;
   padding: .5em 0;
   margin: 2em 0 1em;
 }
@@ -62,7 +62,7 @@ h6 {
 }
 
 a {
-  color: #4183C4;
+  color: #4D4843;
   text-decoration: none;
 }
 
@@ -113,7 +113,7 @@ a img {
   margin-bottom: 0;
   clear: both;
   height: 91px;
-  background: white url(../images/background-v2.png) 0 0 repeat-x;
+  background: #1CAD7E;
 }
 
 #header {
@@ -123,7 +123,7 @@ a img {
 
 #header a.logo {
   float: left;
-  margin-top: 15px;
+  margin-top: 25px;
   display: inline-block;
 }
 
@@ -133,7 +133,7 @@ a img {
   font-weight: bold;
   text-shadow: white 1px 1px 0px;
   font-size: 12px;
-  margin-top: 18px;
+  margin-top: 27px;
   background: #f5f5f5;
   filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#fcfcfc', endColorstr='#ececec');
   background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#fcfcfc), to(#e8e8e8));
@@ -179,10 +179,6 @@ div.sidebar-shell {
 
 div.sidebar-module {
   padding: 3px;
-  background: #EEE;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
   display: block;
   width: 332px;
   margin-bottom: 20px;
@@ -190,8 +186,7 @@ div.sidebar-module {
 }
 
 div.sidebar-module > ul {
-  background: #fafafb;
-  border: solid #CACACA;
+  border: solid #ddd;
   border-width: 1px 1px 0px 1px;
   margin: 0px;
 }
@@ -211,7 +206,6 @@ div.sidebar-module li {
 }
 
 div.sidebar-module > ul > li {
-  border-bottom: 1px solid #CACACA;
   text-decoration: none;
 }
 
@@ -224,16 +218,9 @@ div.sidebar-module > ul h3 {
   margin: 0px;
   color: #666;
   text-shadow: 1px 1px 0px #fff;
-  border-bottom: 1px solid #CACACA;
+  border-bottom: 1px solid #ddd;
   font-size: 14px;
   background-color: #e1e1e1;
-  background-image: -moz-linear-gradient(top, #f1f1f1, #e1e1e1);
-  background-image: -ms-linear-gradient(top, #f1f1f1, #e1e1e1);
-  background-image: -o-linear-gradient(top, #f1f1f1, #e1e1e1);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#f1f1f1), to(#e1e1e1));
-  background-image: -webkit-linear-gradient(top, #f1f1f1, #e1e1e1);
-  background-image: linear-gradient(top, #f1f1f1, #e1e1e1);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#f1f1f1', EndColorStr='#e1e1e1');
 }
 
 div.sidebar-module > ul li h3:hover,
@@ -270,10 +257,8 @@ div.sidebar-module > ul h3:hover a {
 
 div.sidebar-module ul ul,
 div.sidebar-module .spacer {
-  display: block;
-  padding-bottom: 2px;
-  background-color: #FAFAFB;
 }
+
 
 div.sidebar-module ul ul li {
   border-top: 1px solid #fff;
@@ -460,8 +445,7 @@ div.sidebar-module ul ul li span {
   overflow:hidden;
   height: auto;
   width: 920px;
-  margin: -20px auto 0;
-  background: url(../images/background-white.png) 0 0 no-repeat;
+  margin: 20px auto 0;
 }
 
 .content {
@@ -858,25 +842,12 @@ div.expandable > ul h3 {
 
 div.expandable > ul h3 > a {
   display: table-cell;
-  background-color: #e1e1e1;
-  background-image: -moz-linear-gradient(top, #f1f1f1, #e1e1e1);
-  background-image: -ms-linear-gradient(top, #f1f1f1, #e1e1e1);
-  background-image: -o-linear-gradient(top, #f1f1f1, #e1e1e1);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#f1f1f1), to(#e1e1e1));
-  background-image: -webkit-linear-gradient(top, #f1f1f1, #e1e1e1);
-  background-image: linear-gradient(top, #f1f1f1, #e1e1e1);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#f1f1f1', EndColorStr='#e1e1e1');
+  background-color: #f4f4f4;
+
 }
 
 div.expandable > ul h3 > a:hover {
-  background-color: #e1e1e1;
-  background-image: -moz-linear-gradient(top, #e1e1e1, #d1d1d1);
-  background-image: -ms-linear-gradient(top, #e1e1e1, #d1d1d1);
-  background-image: -o-linear-gradient(top, #e1e1e1, #d1d1d1);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#e1e1e1), to(#d1d1d1));
-  background-image: -webkit-linear-gradient(top, #e1e1e1, #d1d1d1);
-  background-image: linear-gradient(top, #e1e1e1, #d1d1d1);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#e1e1e1', EndColorStr='#d1d1d1');
+  background-color: #ececec;
 }
 
 div.expandable > ul h3 > a.collapsed,
@@ -885,7 +856,7 @@ div.expandable > ul h3 > a.expanded {
   background-position: 0px -3px;
   background-repeat: no-repeat;
   width: 13px;
-  border-right: 1px solid #cacaca;
+  border-right: 1px solid #ddd;
   padding: 8px 11px;
 }
 
@@ -898,7 +869,7 @@ div.expandable > ul h3 > a.collapsed:hover {
   background-position: 0px -43px;
   background-repeat: no-repeat;
   width: 13px;
-  border-right: 1px solid #cacaca;
+  border-right: 1px solid #ddd;
   padding: 8px 11px;
 }
 

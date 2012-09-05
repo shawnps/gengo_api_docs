@@ -5,14 +5,14 @@ task :compile do
   `nanoc compile`
 end
 
-desc "Publish to http://developer.github.com"
+desc "Publish to http://production.beachape.com"
 task :publish => [:clean] do
   FileUtils.rm_r('output') if File.exist?('output')
 
   sh "nanoc compile"
 
   ENV['GIT_DIR'] = File.expand_path(`git rev-parse --git-dir`.chomp)
-  old_sha = `git rev-parse refs/remotes/origin/gh-pages`.chomp
+  old_sha = `git rev-parse refs/remotes/lloydmeta/gh-pages`.chomp
   Dir.chdir('output') do
     ENV['GIT_INDEX_FILE'] = gif = '/tmp/dev.gh.i'
     ENV['GIT_WORK_TREE'] = Dir.pwd
@@ -29,6 +29,6 @@ task :publish => [:clean] do
     puts `git show #{csha} --stat`
     puts "Updating gh-pages from #{old_sha}"
     `git update-ref refs/heads/gh-pages #{csha}`
-    `git push origin gh-pages`
+    `git push lloydmeta gh-pages`
   end
 end

@@ -37,7 +37,7 @@ The Gengo API allows you to connect your app to Gengo, and order human translati
 
 ## What happens behind the scenes
 
-Gengo uses a large (800+) team of translators, who are in all timezones around the globe. All translators who want to work for myGengo first have to take and pass at least one translation test.
+Gengo uses a large (800+) team of translators, who are in all timezones around the globe. All translators who want to work for Gengo first have to take and pass at least one translation test.
 
 Gengo's translators are notified of new jobs when they come in, and work on translations on a first-come, first-serve basis. They work on the jobs within our website's translation interface.
 
@@ -64,7 +64,7 @@ Each job has a unique URL that will return the status of the job.  A typical res
 
 ## Callbacks
 
-Callbacks are our recommended way of being notified when a translation job is ready. Each api_key (obtained from the Account area) can be assigned a default callback URL telling myGengo where to send notifications when a job is ready for approval. Similar to PayPal’s IPN methodology, this allows an API implementation to be notified about translation jobs when they are ready.  Read details about how this works on the <a href='/v2/callback_urls'>Callback URLs</a> page.
+Callbacks are our recommended way of being notified when a translation job is ready. Each api_key (obtained from the Account area) can be assigned a default callback URL telling Gengo where to send notifications when a job is ready for approval. Similar to PayPal’s IPN methodology, this allows an API implementation to be notified about translation jobs when they are ready.  Read details about how this works on the <a href='/v2/callback_urls'>Callback URLs</a> page.
 
 
 ## Grouping jobs
@@ -95,7 +95,7 @@ We recommend you do add comments to all jobs to give context and direction to th
 
 If your system will not be able to respond to comments, or you do not plan to, it is helpful to add a comment saying "Our system is unable to respond to any translator comments" or similar - this will avoid the translator waiting for a response from you. We may add a further parameter for this specific case - let us know what you think using the "Feedback" tab.
 
-Please bear in mind that it is prohibited by our terms of service to solicit contact details from a myGengo translator.
+Please bear in mind that it is prohibited by our terms of service to solicit contact details from a Gengo translator.
 
 
 ## The review process
@@ -109,7 +109,7 @@ If you prefer not to manually approve jobs, or your system does not have the cap
 
 ### Approving jobs
 
-To approve a job, send a <a href='/v2/translate/job-id-put'>translate/job/{id} (PUT)</a> call with the action set to "approve". You can also add feedback at this time, consisting of a rating from 1-5, a comment for the translator and a comment for myGengo. The feedback rating and comment for the translator are sent to the translator, and myGengo receives the rating, comment for translator and comment for myGengo.
+To approve a job, send a <a href='/v2/translate/job-id-put'>translate/job/{id} (PUT)</a> call with the action set to "approve". You can also add feedback at this time, consisting of a rating from 1-5, a comment for the translator and a comment for Gengo. The feedback rating and comment for the translator are sent to the translator, and Gengo receives the rating, comment for translator and comment for Gengo.
 
 It really helps us to receive feedback ratings for each translation, as we can see how well our translators are doing, reward good work, and provide guidance to any translator that is not performing well. We may also use the feedback ratings in future to prioritize translator-job matchings.
 
@@ -125,7 +125,7 @@ If a job requires corrections, you can request them using the <a href='/v2/trans
 
 ### Rejecting jobs
 
-If you are unhappy with a translation from myGengo, you have the opportunity to reject the job and either receive a credits refund, or pass the job onto a different translator. For more details on what you can expect from our translation, please visit our [Quality Policy](http://gengo.com/help/quality_policy/) page, which outlines what constitutes a fair or unfair rejection.
+If you are unhappy with a translation from Gengo, you have the opportunity to reject the job and either receive a credits refund, or pass the job onto a different translator. For more details on what you can expect from our translation, please visit our [Quality Policy](http://gengo.com/help/quality_policy/) page, which outlines what constitutes a fair or unfair rejection.
 
 All rejections are reviewed by our staff, and we take each one seriously - normally we will contact the translator and review what has gone wrong with that particular translation. While we are obviously happy to uphold fair rejections, if you persistently reject jobs without reason, your account will be suspended as this kind of behaviour is unfair to the translator and time-consuming for us.
 
@@ -133,7 +133,7 @@ To reject a job, use the <a href='/v2/translate/job-id-put'>translate/job/{id} (
 
 ## Order machine translation
 
-We've tried to make it convenient for you to use the myGengo API both for human and machine translation. While we're not big fans of the low quality machine translation can produce, we realise that not all users want, or can afford for, all of their content to be translated by humans. So it's easy for you to switch between the two, and machine translation is free. If you would like to order machine translation only, simply use the tier="machine" when you call the translate/jobs (POST) method and you will not be charged for your order.   Please also note that machine translations have a character limit of 7500 characters.
+We've tried to make it convenient for you to use the Gengo API both for human and machine translation. While we're not big fans of the low quality machine translation can produce, we realise that not all users want, or can afford for, all of their content to be translated by humans. So it's easy for you to switch between the two, and machine translation is free. If you would like to order machine translation only, simply use the tier="machine" when you call the translate/jobs (POST) method and you will not be charged for your order.   Please also note that machine translations have a character limit of 7500 characters.
 
 We use Google's Translate API service to supply our machine translation. Let us know if there's another free service you'd like us to add by using the Feedback tab.
 
@@ -150,7 +150,7 @@ You can see jobs placed through the API on the website, on your customer dashboa
 
 ## Using credits
 
-All human translation jobs ordered via the API require up-front payment of myGengo credits. Credits are deducted from your account when you order jobs via a <a href='/v2/translate/jobs'>translate/jobs/ (POST)</a> call (except when you use a tier of "machine" to order machine translation). You can buy credits by logging into the mygengo.com site and visiting your Account page. The current version of the myGengo Translate API requires accounts to maintain a positive credit balance for jobs to be translated.  If there are not enough credits to process a job when it is submitted via the API, the response will indicate this.
+All human translation jobs ordered via the API require up-front payment of Gengo credits. Credits are deducted from your account when you order jobs via a <a href='/v2/translate/jobs'>translate/jobs/ (POST)</a> call (except when you use a tier of "machine" to order machine translation). You can buy credits by logging into the mygengo.com site and visiting your Account page. The current version of the Gengo Translate API requires accounts to maintain a positive credit balance for jobs to be translated.  If there are not enough credits to process a job when it is submitted via the API, the response will indicate this.
 
 ## Call Formats
 All API calls require the api_key parameter to be sent.  Authenticated calls must also be signed and sent with the api_sig parameter.  If the call is by POST, parameters specific to the entry-point should be wrapped in a parameter named "data".
@@ -177,4 +177,4 @@ Currently the API can respond in one of two response formats: JSON and XML.  Exa
 
 ## Encoding
 
-myGengo expects all data to be UTF-8 encoded and will respond with UTF-8 encoded data. Make sure you encode your data in UTF-8 to avoid issues.
+Gengo expects all data to be UTF-8 encoded and will respond with UTF-8 encoded data. Make sure you encode your data in UTF-8 to avoid issues.

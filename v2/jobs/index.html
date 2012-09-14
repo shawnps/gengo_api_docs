@@ -232,6 +232,36 @@ prints gengo.postTranslationJobs(jobs = data)
   <span class="p">}</span>
 <span class="p">}</span></code></pre>
 
+<p><em>There are repeated jobs are in the jobs payload</em></p>
+
+<p>If there are any jobs inside a payload that are repeats of any other jobs, we return a response identifying the job payloads that were duplicates along with which job payload that they are duplicates of as well as the custom data that you sent with that duplicate payload</p>
+
+<pre class="headers"><code>Status: 200 OK</code></pre>
+
+<pre class="highlight"><code class="language-javascript"><span class="p">{</span>
+  <span class="s2">"opstat"</span><span class="o">:</span> <span class="s2">"ok"</span><span class="p">,</span>
+  <span class="s2">"response"</span><span class="o">:</span> <span class="p">{</span>
+    <span class="s2">"jobs"</span><span class="o">:</span> <span class="p">{</span>
+      <span class="s2">"job_2"</span><span class="o">:</span> <span class="p">{</span>
+        <span class="s2">"duplicate"</span><span class="o">:</span> <span class="s2">"job_1"</span><span class="p">,</span>
+        <span class="s2">"custom_data"</span><span class="o">:</span> <span class="s2">""</span>
+      <span class="p">},</span>
+      <span class="s2">"job_3"</span><span class="o">:</span> <span class="p">{</span>
+        <span class="s2">"duplicate"</span><span class="o">:</span> <span class="s2">"job_1"</span><span class="p">,</span>
+        <span class="s2">"custom_data"</span><span class="o">:</span> <span class="s2">""</span>
+      <span class="p">},</span>
+      <span class="s2">"job_4"</span><span class="o">:</span> <span class="p">{</span>
+        <span class="s2">"duplicate"</span><span class="o">:</span> <span class="s2">"job_1"</span><span class="p">,</span>
+        <span class="s2">"custom_data"</span><span class="o">:</span> <span class="s2">""</span>
+      <span class="p">}</span>
+    <span class="p">},</span>
+    <span class="s2">"order_id"</span><span class="o">:</span> <span class="s2">"122900"</span><span class="p">,</span>
+    <span class="s2">"job_count"</span><span class="o">:</span> <span class="mi">2</span><span class="p">,</span>
+    <span class="s2">"credits_used"</span><span class="o">:</span> <span class="s2">"0.40"</span><span class="p">,</span>
+    <span class="s2">"currency"</span><span class="o">:</span> <span class="s2">"USD"</span>
+  <span class="p">}</span>
+<span class="p">}</span></code></pre>
+
 <p><em>Mix of new and old jobs</em></p>
 
 <p>If there is a mix of lazy jobs and new jobs in the POST, you will get back a response that contains the old jobs, an order ID for the new jobs, number of new jobs, total cost, and a group ID for the new batch of jobs in the order.</p>

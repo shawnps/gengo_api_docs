@@ -127,9 +127,9 @@ If there are only lazy jobs (i.e. all jobs have already been ordered before and 
 <%= headers 200 %>
 <%= json :jobs_post_all_old %>
 
-_There are repeated jobs are in the jobs payload_
+_There are repeated jobs in the jobs payload_
 
-If there are any jobs inside a payload that are repeats of any other jobs, we return a response identifying the job payloads that were duplicates along with which job payload that they are duplicates of as well as the custom data that you sent with that duplicate payload
+If there are any jobs inside a payload that are repeats of any other jobs in the same payload, we return a response identifying the job payloads that were duplicates.
 
 <%= headers 200 %>
 <%= json :jobs_post_duplicates %>

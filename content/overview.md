@@ -37,7 +37,7 @@ The Gengo API allows you to connect your app to Gengo, and order human translati
 
 ## What happens behind the scenes
 
-Gengo uses a large (500+) team of translators, who are in all timezones around the globe. All translators who want to work for Gengo first have to take and pass at least one translation test.
+Gengo uses a large (5000+) team of translators, who are in all timezones around the globe. All translators who want to work for Gengo first have to take and pass at least one translation test.
 
 Gengo's translators are notified of new jobs when they come in, and work on translations on a first-come, first-serve basis. They work on the jobs within our website's translation interface.
 

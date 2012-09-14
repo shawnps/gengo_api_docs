@@ -235,6 +235,29 @@ module GitHub
         }
     )
 
+    JOBS_POST_DUPLICATES = OK_RESPONSE.merge(
+
+        "response"=>{
+                "jobs"=>{
+                    "job_2"=>{
+                        "duplicate"=>"job_1",
+                        "custom_data"=>""
+                    },
+                    "job_3"=>{
+                        "duplicate"=>"job_1",
+                        "custom_data"=>""
+                    },
+                    "job_4"=>{
+                        "duplicate"=>"job_1",
+                        "custom_data"=>""
+                    }
+                },
+                "order_id"=>"122900",
+                "job_count"=>2,
+                "credits_used"=>"0.40",
+                "currency"=>"USD"}
+    )
+
     JOBS_GET = OK_RESPONSE.merge(
 
         "response" => [

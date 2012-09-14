@@ -127,6 +127,13 @@ If there are only lazy jobs (i.e. all jobs have already been ordered before and 
 <%= headers 200 %>
 <%= json :jobs_post_all_old %>
 
+_There are repeated jobs are in the jobs payload_
+
+If there are any jobs inside a payload that are repeats of any other jobs, we return a response identifying the job payloads that were duplicates along with which job payload that they are duplicates of as well as the custom data that you sent with that duplicate payload
+
+<%= headers 200 %>
+<%= json :jobs_post_duplicates %>
+
 _Mix of new and old jobs_
 
 If there is a mix of lazy jobs and new jobs in the POST, you will get back a response that contains the old jobs, an order ID for the new jobs, number of new jobs, total cost, and a group ID for the new batch of jobs in the order.

@@ -21,6 +21,7 @@ example: "food=steak&cuisine=french&drink=wine" sorts to "cuisine=french&drink=w
 
 ## Example API authenticated call
 
+<pre class='code'>
     // submit a comment for job ID 20
 
     $params = array('body' => 'please use British spelling');
@@ -43,3 +44,4 @@ example: "food=steak&cuisine=french&drink=wine" sorts to "cuisine=french&drink=w
     curl_setopt($ch, CURLOPT_POST, 1);
     curl_setopt($ch, CURLOPT_POSTFIELDS, $params);
     $response = curl_exect($ch); curl_close($ch);
+</pre>

@@ -10,6 +10,8 @@ Callback notifications are sent when:
 
 * A job is ready for review
 * A job has been auto-approved (the auto_approve flag was set to 1 when submitting the job)
+* A job is manually approved via our Gengo Dashboard customer interface
+* A job was ordered and put into our Queue, processed, and ready to be picked up by a translator
 * A comment has been posted for a job
 
 Callback URLs can be assigned per api-key or per job. A callback URL assigned to a job takes precedence over the default callback URL set for an api-key. Up to 3 attempts will be made to submit data to the callback URL - the first time will be immediately when applicable, with subsequent attempts an hour apart.

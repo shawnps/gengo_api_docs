@@ -21,11 +21,16 @@
         <div>
           <a class="logo" href="/"><img src="/images/logo_developer.png" width="120" height="43" /></a>
           <ul class="nav">
-            <li><a href="/">English</a></li>
-            <li><a href="/ja/">日本語</a></li>
+            <!-- <li><a href="/">English</a></li>
+            <li><a href="/ja/">日本語</a></li> -->
             <li><a href="mailto:support@gengo.com?subject=GengoAPI">Support</a></li>
           </ul>
         </div>
+        <% if language_code_of(@item).nil?%>
+          <%= render "gengo_nav" %>
+        <% else %>
+          <%= render "gengo_nav_#{language_code_of(@item)}" %>
+        <% end %>
       </div><!-- #header -->
     </div><!-- #header-wrapper -->
 

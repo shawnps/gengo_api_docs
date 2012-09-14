@@ -13,7 +13,7 @@ title: Gengo API Overview
 * <a href="#callbacks">Callbacks</a>
 * <a href="#grouping-jobs">Grouping jobs</a>
 * <a href="#escaping-text-from-a-job">Escaping text from a job</a>
-* <a href="#different-levels">Different levels (Standard, Pro, Ultra)</a>
+* <a href="#what-do-the-different-levels-standard-pro-ultra-mean">Different levels (Standard, Pro, Ultra)</a>
 * <a href="#cancelling-jobs">Cancelling jobs</a>
 * <a href="#comments">Comments</a>
 * <a href="#the-review-process">The review process</a>

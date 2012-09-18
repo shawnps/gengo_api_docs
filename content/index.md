@@ -14,4 +14,4 @@ For older versions of the Gengo API, you can view [previous API documentation](/
 
 ## Upcoming Changes
 
-We are working towards adding improved stability and better error messaging in response payloads. We have also recently changed the Gengo API documentation framework, so look for the [code]*[/code] symbol requesting special attention.
+We are working towards adding improved stability and better error messaging in response payloads. We have also recently changed the Gengo API documentation framework, so look for the `*` symbol indicating special attention.

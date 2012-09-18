@@ -28,7 +28,7 @@ If you're on OSX and get an error about missing header files...
 
     mkmf.rb can't find header files for ruby at /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/ruby.h
 
-then after installing Xcode go to Preferences > Downloads and install the Commandline Tools. Then run the above `bundle install` again.
+then after installing Xcode go to Preferences > Downloads and install the Command Line Tools. Then run the above `bundle install` again.
 
 ### JSON Responses
 

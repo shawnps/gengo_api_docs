@@ -6,11 +6,19 @@ All submissions are welcome. To submit a change, fork this repo, commit your cha
 
 ## Setup
 
-Ruby 1.9 is required to build the site.
+Ruby 1.9 is required to build the site. Start by installing [bundler](http://gembundler.com/):
+
+    gem install bundler
 
 Get the nanoc gem, plus kramdown for markdown parsing:
 
     bundle install
+
+(If you're on OSX and get an error about missing header files...
+
+    mkmf.rb can't find header files for ruby at /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/ruby.h
+
+then after installing Xcode go to Preferences > Downloads and install the Commandline Tools. Then run the above `bundle install` again).
 
 You can see the available commands with nanoc:
 

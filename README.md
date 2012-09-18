@@ -14,12 +14,6 @@ Get the nanoc gem, plus kramdown for markdown parsing:
 
     bundle install
 
-(If you're on OSX and get an error about missing header files...
-
-    mkmf.rb can't find header files for ruby at /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/ruby.h
-
-then after installing Xcode go to Preferences > Downloads and install the Commandline Tools. Then run the above `bundle install` again).
-
 You can see the available commands with nanoc:
 
     nanoc -h
@@ -27,6 +21,14 @@ You can see the available commands with nanoc:
 Nanoc has [some nice documentation](http://nanoc.stoneship.org/docs/3-getting-started/) to get you started.  Though if you're mainly concerned with editing or adding content, you won't need to know much about nanoc.
 
 [nanoc]: http://nanoc.stoneship.org/
+
+#### OSX Mountain Lion issues?
+
+If you're on OSX and get an error about missing header files...
+
+    mkmf.rb can't find header files for ruby at /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/ruby.h
+
+then after installing Xcode go to Preferences > Downloads and install the Commandline Tools. Then run the above `bundle install` again.
 
 ### JSON Responses
 

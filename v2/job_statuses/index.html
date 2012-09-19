@@ -5,7 +5,7 @@
   <meta http-equiv="Content-Language" content="en-us" />
   <meta http-equiv="imagetoolbar" content="false" />
   <meta name="MSSmartTagsPreventParsing" content="true" />
-  <title>Client libraries | Gengo API</title>
+  <title>Job statuses | Gengo API</title>
   <link href="/css/reset.css" rel="stylesheet" type="text/css" />
   <link href="/css/960.css" rel="stylesheet" type="text/css" />
   <link href="/css/uv_active4d.css" rel="stylesheet" type="text/css" />
@@ -52,23 +52,24 @@
 
     <div id="wrapper">
       <div class="content">
-        <h1 id="client-libraries">Client libraries</h1>
+        <h1 id="job-statuses">Job statuses</h1>
 
-<h2 id="library-selection">Library selection</h2>
-
-<p>We’ve created libraries for major programming languages, ready to drop straight into your code. Pick yours from the selection below.</p>
-
-<ul>
-<li><a href="https://github.com/myGengo/mygengo-csharp">C#</a></li>
-  <li><a href="https://github.com/myGengo/mygengo-java">Java</a></li>
-  <li><a href="https://github.com/myGengo/mygengo-php">PHP</a></li>
-  <li><a href="https://github.com/myGengo/mygengo-python">Python</a></li>
-  <li><a href="https://rubygems.org/gems/mygengo">Ruby</a></li>
-</ul><p>We recommend you still check out the <a href="/overview/getting_started/">Getting Started</a>, <a href="/overview/">System Overview</a> and <a href="/callback_urls">Callback URLs</a> pages so that you have a good overview of the API before you start building your app. And as always, please use the sandbox for testing.</p>
-
-<p>Have a library that you want to see here? <a href="mailto:api@gengo.com?Subject=Client%20library%20request">Let us know</a>.</p>
-
-<p>All code is provided on an as-is basis under the <a href="https://raw.github.com/mygengo/mygengo-python/master/LICENSE.txt">New BSD license</a></p>
+<dl>
+<dt>unpaid</dt>
+  <dd>Not enough funds to translate</dd>
+  <dt>available</dt>
+  <dd>Awaiting translator</dd>
+  <dt>pending</dt>
+  <dd>Translating</dd>
+  <dt>reviewable</dt>
+  <dd>Translated and awaiting approval</dd>
+  <dt>approved</dt>
+  <dd>User-approved translation</dd>
+  <dt>rejected</dt>
+  <dd>User-rejected translation awaiting new translator</dd>
+  <dt>canceled</dt>
+  <dd>User canceled the translation before it began or when rejecting it</dd>
+</dl>
       </div>
 
       

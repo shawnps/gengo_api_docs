@@ -8,7 +8,7 @@ The Gengo API helps you to take your service global. Whether you're integrating 
 
 The online documentation here describes the resources comprising the official Gengo API. You can jump right in by browsing the resources on the right >>
 
-The current version of the Gengo API is v2. If you have any problems or requests please contact [support](mailto:support@gengo.com?subject=Gengo API Inquiry).
+The current version of the Gengo API is v2. If you have any problems or requests please [contact support](mailto:support@gengo.com?subject=Gengo API Inquiry).
 
 For older versions of the Gengo API, you can view [previous API documentation](/legacy/).
 

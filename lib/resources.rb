@@ -424,6 +424,35 @@ module GitHub
             "ctime"=>"2012-07-19 02:57:10.526565"
         }
     )
+
+    ORDER_GET = OK_RESPONSE.merge(
+        "response"=>{
+                "order"=>{
+                    "total_credits"=>"5.00",
+                    "currency"=>"USD",
+                    "as_group"=>1,
+                    "total_units"=>"100",
+                    "jobs_available"=>[
+                        "989291",
+                        "989292",
+                        "989293",
+                        "989294",
+                        "989295",
+                        "989296",
+                        "989297",
+                        "989298"
+                    ],
+                    "jobs_pending"=>[
+                        "989290"
+                    ],
+                    "jobs_reviewable"=>[
+                        "989289"
+                    ],
+                    "total_jobs"=>"10"
+                }
+            }
+    )
+
   end
 end
 

@@ -56,7 +56,7 @@ __Summary__
 : Submits a job or group of jobs to translate.
 
 __URL__
-: http://api.mygengo.com/v2/translate/job/s
+: http://api.mygengo.com/v2/translate/jobs
 
 __Authentication__
 : Required

@@ -4,16 +4,14 @@ title: Gengo API
 
 # The Gengo API
 
-This describes the resources that make up the official Gengo API . If
-you have any problems or requests please contact
-[support](mailto:support@gengo.com?subject=GengoAPI).
+The Gengo API allows you to globalize your service. Whether you're integrating a translation option for users, or you're building a unique translation business, our API handles a [variety of languages](/how-it-works/pricing-languages/) and [features](/api/).
 
-For the new API v2, start browsing the resources on the right >>
+The online API documentation here describes the resources comprising the official Gengo API. You can jump right in by browsing the resources on the right >>
 
-Please note that documentation for older version of the API are no longer being
-maintained.
+The current version of the Gengo API is v2. If you have any problems or requests please contact [support](mailto:support@gengo.com?subject=Gengo API Inquiry).
 
-## Current Version
+For older versions of the Gengo API, you can view [previous API documentation](/legacy/).
 
-The current version of the Gengo API is V2, which supports queuing of orders
-and getting of jobs by order_id.
+## Upcoming Changes
+
+We are working towards adding improved stability and better error messaging in response payloads. We have also recently changed the Gengo API documentation framework, so look for the `*` symbol indicating special attention.

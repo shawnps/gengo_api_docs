@@ -1,21 +1,29 @@
 ---
-title: Client libraries | Gengo API
+title: Client Libraries | Gengo API
 ---
 
-# Client libraries
+# Client Libraries
 
-## Library selection
+## Library Selection
 
-We’ve created libraries for major programming languages, ready to drop straight into your code. Pick yours from the selection below.
+### Official Libraries
 
-* [C#](https://github.com/myGengo/mygengo-csharp)
-* [Java](https://github.com/myGengo/mygengo-java)
-* [PHP](https://github.com/myGengo/mygengo-php)
-* [Python](https://github.com/myGengo/mygengo-python)
-* [Ruby](https://rubygems.org/gems/mygengo)
+We provide official client libraries for a few popular programming languages, ready to drop straight into your code. We host them on Github, and encourage you to fork them.
 
-We recommend you still check out the [Getting Started](/overview/getting_started/), [System Overview](/overview/) and [Callback URLs](/callback_urls) pages so that you have a good overview of the API before you start building your app. And as always, please use the sandbox for testing.
+ * [PHP](https://github.com/myGengo/mygengo-php)
+ * [Python](https://github.com/myGengo/mygengo-python)
+ * [Ruby](https://rubygems.org/gems/mygengo)
 
-Have a library that you want to see here? [Let us know](mailto:api@gengo.com?Subject=Client library request).
+
+### Community Libraries
+
+Our developer community has created client libraries of their own (thanks!). These are maintained by the original author, and we provide links to them here for convenience.
+
+ * [Racket](https://github.com/shawnps/mygengo-racket)
+
+
+We recommend checking out the [Getting Started](/overview/getting_started/), [System Overview](/overview/) and [Callback URLs](/callback_urls/) pages for an overview of the API before getting started on your app. You're also encouraged to use our [Sandbox](http://sandbox.mygengo.com/) for testing your implementation.
+
+Wrote your own client library in a language not seen here? [Let us know!](mailto:api@gengo.com?Subject=New client library).
 
 All code is provided on an as-is basis under the [New BSD license](https://raw.github.com/mygengo/mygengo-python/master/LICENSE.txt)

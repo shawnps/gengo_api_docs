@@ -98,8 +98,21 @@ One thing: remember to add trailing slashes to all nanoc links!
 
     $ rake publish
 
+## Gengo API Documentation Syntax
+
+Follow these basic syntax rules when editing API documentation:
+
+ * Parameter names should be in **bold**.
+ * Parameter values should be display as `code`.
+ * Always use a lowercase *v* when referencing the version - *v2*.
+
+## Gengo API Guidelines
+
+Review the [Gengo API Guidelines](http://github.com/myGengo/tech-docs-internal/) for information on naming, versioning, and all the great rules that help make an API consistent and easy to use.
+
 ## TODO
 
+* Complete Gengo API Documentation Syntax section
 * Integrate through a simple hurl.it app for live API calls.
 * Maybe add a nice TOC at the top of each page.
 * Write a task for verifying JSON Resource examples against the actual

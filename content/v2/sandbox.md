@@ -10,6 +10,8 @@ What’s different about the sandbox?
 
 * You can add free credits to your account at will, for testing.
 * You can trigger the "completion" of your translation jobs (i.e. be a faux translator) so that you can test what your code does in response.
+* In the sandbox, toggling between job states (e.g. pending to reviewable etc) _does not_ trigger callbacks
+* To tetst callbacks in the sandbox, click the __Send Callback__ button
 * Additional controls for you to manually trigger job status changes and other actions, so that you can test your callbacks.
 * The sandbox jobs database may occasionally be wiped clean to prepare it for new features. As such you should not rely on the sandbox for permanent storage.
 

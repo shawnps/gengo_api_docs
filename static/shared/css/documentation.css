@@ -127,9 +127,9 @@ a img {
 
 
 #header a.logo {
-  float: left;
-  margin-top: 20px;
-  display: inline-block;
+    float: left;
+    margin-top: 22px;
+    display: inline-block;
 }
 
 #header ul.nav {
@@ -198,7 +198,7 @@ a img {
 }
 
 #header nav ul {
-    margin: 0;
+    margin: -3px 0 0 -5px;
     padding: 0;
 }
 

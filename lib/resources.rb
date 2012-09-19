@@ -207,13 +207,6 @@ module GitHub
         "response" => {
             "jobs" => {
                 "job_1" => [
-                    {"job_id" => "352691"},
-                    {"job_id" => "352692"}
-                ],
-                "job_2" => [
-                    {"job_id" => "352693"}
-                ],
-                "job_3" => [
                     {
                         "job_id"=>"922599",
                         "slug"=>"slug 0",
@@ -230,7 +223,25 @@ module GitHub
                         "auto_approve"=>"0",
                         "body_tgt"=>"This is a random string in japanese"
                     }
-                ]
+                ],
+                "job_2" => [
+                    {
+                        "job_id"=>"922560",
+                        "slug"=>"slug 0",
+                        "body_src"=>"This is another random string",
+                        "lc_src"=>"en",
+                        "lc_tgt"=>"ja",
+                        "unit_count"=>"10",
+                        "tier"=>"ultra_pro",
+                        "credits"=>"1.70",
+                        "currency"=>"USD",
+                        "status"=>"approved",
+                        "eta"=>-1,
+                        "ctime"=>1348045507,
+                        "auto_approve"=>"0",
+                        "body_tgt"=>"This is another random string in japanese"
+                    }
+                ],
             }
         }
     )

@@ -68,6 +68,7 @@ __Parameters___
 __Data arguments__
 : * jobs(required): An array of Job Payloads. Please see the job payloads page for full details of the required parameters.
   * as_group(optional): 1 (true) / 0 (false, default). Whether all jobs in this group should be done by one translator. Some restrictions apply to what jobs can be grouped, including the requirement that language pairs and tiers must be the same across all jobs.
+  * allow_fork(optional): 1 (true, default) / 0 (false). If a grouped job is partially completed by a translator, but a translator fails to complete the whole thing, a new order is normally created for the remaining unfinished jobs (it forks) so another translator can take it. If as_group is true and allow_fork is false, then the remaining jobs will instead be cancelled.
 
 __Example call__
 
@@ -104,6 +105,7 @@ __Example call__
                 'tier': 'standard', # REQUIRED. tier type ("machine", "standard", "pro", or "ultra")'auto_approve': 0, # OPTIONAL. Hopefully self explanatory (1 = yes, 0 = no)'comment': 'HEY THERE TRANSLATOR', # OPTIONAL. Comment to leave for translator.             'callback_url': 'http://...', # OPTIONAL. Callback URL that updates are sent to.'custom_data': 'your optional custom data, limited to 1kb.' # OPTIONAL         }, },
             'process': 1, # OPTIONAL. 1 (true, default) / 0 (false). Whether to pay for the job(s) and make them available for translation.
             'as_group': 1, # OPTIONAL. 1 (true) / 0 (false, default). Whether all jobs in this group should be done by one translator.
+            'allow_fork': 0, # OPTIONAL. 1 (true, default) / 0 (false). Whether jobs unfinished by a translator in a group order should be cancelled automatically, or to manually choose to let another translator try or manually cancel.
         }
 
     # And now we post them over...

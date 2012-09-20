@@ -21,9 +21,9 @@ task :publish => [:clean] do
     tsha = `git write-tree`.strip
     puts "Created tree   #{tsha}"
     if old_sha.size == 40
-      csha = `echo 'boom' | git commit-tree #{tsha} -p #{old_sha}`.strip
+      csha = `echo 'boon' | git commit-tree #{tsha} -p #{old_sha}`.strip
     else
-      csha = `echo 'boom' | git commit-tree #{tsha}`.strip
+      csha = `echo 'boon' | git commit-tree #{tsha}`.strip
     end
     puts "Created commit #{csha}"
     puts `git show #{csha} --stat`

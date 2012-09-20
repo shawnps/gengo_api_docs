@@ -120,4 +120,4 @@ Review the [Gengo API Guidelines](http://github.com/myGengo/tech-docs-internal/)
 
 ## Credits
 
-As noted on the top, this project is based off of (Github's own documentation repo)[https://github.com/github/developer.github.com] and modified further by Lloyd (lloyd.chan@gengo.com). If you have questions about how to work with this project or have any issues, please direct them to Lloyd.
+As noted on the top, this project is based off of [Github's own documentation repo](https://github.com/github/developer.github.com) and modified further by Lloyd (lloyd.chan@gengo.com). If you have questions about how to work with this project or have any issues, please direct them to Lloyd.

@@ -4,30 +4,30 @@ title: Gengo API Overview
 
 # Gengo API v2 Overview
 
-* <a href="#translation-flow">Translation Flow</a>
-* <a href="#what-happens-behind-the-scenes">Behind the Scenes</a>
-* <a href="#methodology">Methodology</a>
-* <a href="#ordering-jobs">Ordering jobs</a>
-* <a href="#working-without-a-database">Working without a database</a>
-* <a href="#polling">Polling</a>
-* <a href="#callbacks">Callbacks</a>
-* <a href="#grouping-jobs">Grouping jobs</a>
-* <a href="#escaping-text-from-a-job">Escaping text from a job</a>
-* <a href="#what-do-the-different-levels-standard-pro-ultra-mean">Different levels (Standard, Pro, Ultra)</a>
-* <a href="#cancelling-jobs">Cancelling jobs</a>
-* <a href="#comments">Comments</a>
-* <a href="#the-review-process">The review process</a>
-    * <a href="#approving-jobs">Approving jobs</a>
-    * <a href="#automatic-approval">Automatic approval</a>
-    * <a href="#revising-jobs">Revising jobs</a>
-    * <a href="#rejecting-jobs">Rejecting jobs</a>
-* <a href="#order-machine-translation">Ordering machine translation</a>
-* <a href="#machine-translation-preview">Getting a preview translation by machine</a>
-* <a href="#retrieve-orders-placed-from-web-ui-via-the-api-and-vice-versa">Retrieve orders placed from Web UI via the API and vice versa</a>
-* <a href="#using-credits">Using credits</a>
-* <a href="#call-formats">Call formats</a>
-* <a href="#response-formats">Response formats</a>
-* <a href="#encoding">Encoding</a>
+* [Translation Flow](#translation-flow)
+* [Behind the Scenes](#what-happens-behind-the-scenes)
+* [Methodology](#methodology)
+* [Ordering jobs](#ordering-jobs)
+* [Working without a database](#working-without-a-database)
+* [Polling](#polling)
+* [Callbacks](#callbacks)
+* [Grouping jobs](#grouping-jobs)
+* [Escaping text from a job](#escaping-text-from-a-job)
+* [Different levels (Standard, Pro, Ultra)](#what-do-the-different-levels-standard-pro-ultra-mean)
+* [Cancelling jobs](#cancelling-jobs)
+* [Comments](#comments)
+* [The review process](#the-review-process)
+    * [Approving jobs](#approving-jobs)
+    * [Automatic approval](#automatic-approval)
+    * [Revising jobs](#revising-jobs)
+    * [Rejecting jobs](#rejecting-jobs)
+* [Ordering machine translation](#order-machine-translation)
+* [Getting a preview translation by machine](#machine-translation-preview)
+* [Retrieve orders placed from Web UI via the API and vice versa](#retrieve-orders-placed-from-web-ui-via-the-api-and-vice-versa)
+* [Using credits](#using-credits)
+* [Call formats](#call-format)
+* [Response formats](#response-formats)
+* [Encoding](#encoding)
 
 
 ## Translation flow

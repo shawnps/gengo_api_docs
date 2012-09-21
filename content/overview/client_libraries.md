@@ -22,7 +22,7 @@ Our developer community has created client libraries of their own (thanks!). The
  * [Racket](https://github.com/shawnps/mygengo-racket)
 
 
-We recommend checking out the [Getting Started](/overview/getting_started/), [System Overview](/overview/) and [Callback URLs](/callback_urls/) pages for an overview of the API before getting started on your app. You're also encouraged to use our [Sandbox](http://sandbox.mygengo.com/) for testing your implementation.
+We recommend checking out the [Getting Started](/v2/first_steps/), [System Overview](/overview/) and [Callback URLs](/v2/callback_urls/) pages for an overview of the API before getting started on your app. You're also encouraged to use our [Sandbox](http://sandbox.mygengo.com/) for testing your implementation.
 
 Wrote your own client library in a language not seen here? [Let us know!](mailto:api@gengo.com?Subject=New client library).
 

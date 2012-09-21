@@ -76,7 +76,7 @@ In terms of interacting with the Gengo API, data is shuttled back and forth as a
 
 As the Gengo third party ecosystem continues to grow and generate traffic, it becomes more difficult to discern whether a specific version of an application is running into problems. Since the API is very "write-heavy", it's beneficial to be able to narrow down how bad translation requests make it into the system. If you provide us proper header information, we can spot this as it comes up and work with you to ensure your application is working as it needs to.
 
-If you're not using one of <a href='/overview/client_libraries'>our programming libraries</a> that are on tap, we ask that you send us a User-Agent in the following format:
+If you're not using one of <a href='/overview/client_libraries/'>our programming libraries</a> that are on tap, we ask that you send us a User-Agent in the following format:
 
 Gengo app_name; Version app_version; your_site_url;
 

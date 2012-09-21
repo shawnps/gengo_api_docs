@@ -54,7 +54,7 @@
       <div class="content">
         <h1 id="ui-recommendations">UI recommendations</h1>
 
-<p>This document will help you implement a UI for your API connection to Gengo. If you need more information refer to our Translation API documentation (especially <a href="/overview">System Overview</a>, <a href="/v2/first_steps">API First Steps</a> and <a href="/v2/best_practices">Best Practices for Plugins &amp; API Usage</a>), or <a href="mailto:api@gengo.com?Subject=Client%20library%20request">contact support</a>.</p>
+<p>This document will help you implement a UI for your API connection to Gengo. If you need more information refer to our Translation API documentation (especially <a href="/overview/">System Overview</a>, <a href="/v2/first_steps/">API First Steps</a> and <a href="/v2/best_practices/">Best Practices for Plugins &amp; API Usage</a>, or <a href="mailto:api@gengo.com?Subject=Client%20library%20request">contact support</a>.</p>
 
 <h3 id="things-to-remember-when-implementing-a-ui-for-gengo-translation">Things to remember when implementing a UI for Gengo translation</h3>
 
@@ -113,7 +113,7 @@
 
 <h3 id="order-translation-panel">Order translation panel</h3>
 
-<p>In this view the user will confirm the settings for translating one (or more) pieces of content and place an order. Depending on your app this might be a step in a publishing process, a part of another panel, or an individual panel within your system. You can allow the user to bundle a group of translations with the same settings together (a group of jobs), and to order multiple translations with different settings at the same time. Refer to the <a href="/v2/jobs/post">translate/jobs (POST)</a> method and <a href="/v2/payloads">Translate API - Job Payload</a> for more information.</p>
+<p>In this view the user will confirm the settings for translating one (or more) pieces of content and place an order. Depending on your app this might be a step in a publishing process, a part of another panel, or an individual panel within your system. You can allow the user to bundle a group of translations with the same settings together (a group of jobs), and to order multiple translations with different settings at the same time. Refer to the <a href="/v2/jobs/#jobs-post">translate/jobs/ (POST)</a> method and <a href="/v2/payloads/">Translate API - Job Payload</a> for more information.</p>
 
 <p><em>The following apply per job or group of jobs:</em></p>
 
@@ -158,17 +158,17 @@
         A minimal translation order panel wireframe
     </p>
     <p>
-        Normal method: <a href="/v2/jobs/post"><code>translate/jobs (POST)</code></a>
+        Normal method: <a href="/v2/jobs/#jobs-post"><code>translate/jobs (POST)</code></a>
     </p>
     </figcaption></figure><figure><img src="/images/ui_recommendations/order-translation-group.png"><figcaption><p>
         A translation panel wireframe for a group of jobs (preset by the application)
     </p>
     <p>
-        Normal method: <a href="/v2/jobs/post"><code>translate/jobs (POST)</code></a> as an array of job payloads (one per <code>body_src</code>)
+        Normal method: <a href="/v2/jobs/#jobs-post"><code>translate/jobs (POST)</code></a> as an array of job payloads (one per <code>body_src</code>)
     </p>
     </figcaption></figure><h3 id="translation-jobs-overview-essential">Translation jobs overview (essential)</h3>
 
-<p>This shows the current status of all translations that have been ordered through Gengo (ref: <a href="/v2/jobs/get">translate/jobs (GET)</a> method and <a href="/payloads">Job payload response</a>). You might make it a separate page, or simply add the information from Gengo to an existing UI. Content management systems often have a list of all articles, which can be a good place to add it.</p>
+<p>This shows the current status of all translations that have been ordered through Gengo (ref: <a href="/v2/jobs/#jobs-get">translate/jobs (GET)</a> method and <a href="/v2/payloads/#job-payload---for-responses">Job payload response</a>. You might make it a separate page, or simply add the information from Gengo to an existing UI. Content management systems often have a list of all articles, which can be a good place to add it.</p>
 
 <p><strong>Statuses of jobs</strong></p>
 
@@ -213,7 +213,7 @@
             Translation overview wireframe showing all recommended functionality (with a guide below)
         </p>
         <p>
-            Normal method: <a href="/v2/jobs/get"><code>translate/jobs (GET)</code></a>
+            Normal method: <a href="/v2/jobs/#jobs-get"><code>translate/jobs (GET)</code></a>
         </p>
     </figcaption></figure><h3 id="pending-job-panel">Pending job panel</h3>
 
@@ -236,7 +236,7 @@ Show the estimated completion time (eta)</p>
         A basic pending job panel wireframe underneath the job’s overview information
     </p>
     <p>
-        Normal method: <a href="/v2/jobs/get"><code>translate/job/{id} (GET)</code></a>
+        Normal method: <a href="/v2/job/#job-get"><code>translate/job/{id} (GET)</code></a>
     </p>
     </figcaption></figure><h3 id="comment-thread-panel">Comment thread panel</h3>
 
@@ -259,7 +259,7 @@ Show the estimated completion time (eta)</p>
             A simple comment thread wireframe
         </p>
         <p>
-            Normal method: <a href="/v2/comments/get-job-id"><code>translate/job/{id}/comments (GET)</code></a>
+            Normal method: <a href="/v2/job/#comments-get"><code>translate/job/{id}/comments (GET)</code></a>
         </p>
     </figcaption></figure><h3 id="comment-submission-panel">Comment submission panel</h3>
 
@@ -276,16 +276,16 @@ Show the estimated completion time (eta)</p>
             A comment submission panel wireframe
         </p>
         <p>
-            Normal method: <a href="/v2/comment/post-job-id"><code>translate/job/{id}/comment (POST)</code></a>
+            Normal method: <a href="/v2/job/#comment-post"><code>translate/job/{id}/comment (POST)</code></a>
         </p>
     </figcaption></figure><h3 id="translation-job-review-panel">Translation job review panel</h3>
 
-<p>The translation job review panel allows the user to check a completed translation, and potentially approve it. The translation is provided as a raw JPEG image stream (673px wide) and as tall as required via <a href="v2/job/preview-job-id">translate/job/{id}/preview (GET)</a>. We recommend you also allow them to reject or request corrections for a job (via <a href="v2/job/put-id">translate/job/{id} (PUT)</a>).</p>
+<p>The translation job review panel allows the user to check a completed translation, and potentially approve it. The translation is provided as a raw JPEG image stream (673px wide) and as tall as required via <a href="/v2/job/#preview-get">translate/job/{id}/preview (GET)</a>. We recommend you also allow them to reject or request corrections for a job (via <a href="/v2/job/#job-put">translate/job/{id} (PUT)</a>).</p>
 
 <p><strong>Required</strong></p>
 
 <ul>
-<li>Image preview of the translated text (via <a href="/v2/job/preview-job-id">translate/job/{id}/preview (GET)</a>)</li>
+<li>Image preview of the translated text (via <a href="/v2/job/#preview-get">translate/job/{id}/preview (GET)</a>)</li>
   <li>“Approve” button</li>
 </ul><p><strong>Recommended</strong></p>
 
@@ -300,7 +300,7 @@ Show the estimated completion time (eta)</p>
 </ul><p><strong>If possible</strong></p>
 
 <ul>
-<li>Show or link to previous revisions in the comment thread (via <a href="/v2/job/revisions-job-id">translate/job/{id}/revisions (GET)</a>)</li>
+<li>Show or link to previous revisions in the comment thread (via <a href="/v2/job/#revisions-get">translate/job/{id}/revisions (GET)</a>)</li>
   <li>Make the “Approve” button the most prominent</li>
 </ul><figure><img src="/images/ui_recommendations/translation-review-basic.png"><figcaption><p>
             A minimal translation review panel wireframe
@@ -334,7 +334,7 @@ Show the estimated completion time (eta)</p>
             A wireframe of a recommended feedback panel as part of the translation job review panel, for a group of jobs
         </p>
         <p>
-            Normal method: part of <a href="/v2/jobs/put-job-id"><code>translate/job/{id} (PUT) approve</code></a>
+            Normal method: part of <a href="/v2/job/#job-put"><code>translate/job/{id} (PUT) approve</code></a>
         </p>
     </figcaption></figure><h3 id="approved-job-panel">Approved job panel</h3>
 
@@ -358,7 +358,7 @@ Show the estimated completion time (eta)</p>
                 An approved job panel wireframe, including optional submitted feedback
             </p>
             <p>
-                Normal method: <a href="/v2/jobs/get-job-id"><code>translate/job/{id} (GET)</code></a>
+                Normal method: <a href="/v2/job/#job-get"><code>translate/job/{id} (GET)</code></a>
             </p>
         </figcaption></figure><h3 id="request-revisions-panel">Request revisions panel</h3>
 
@@ -379,7 +379,7 @@ Show the estimated completion time (eta)</p>
             A request revisions panel wireframe
         </p>
         <p>
-            Normal method: <a href="/v2/job/put-job-id"><code>translate/job/{id} (PUT) revise</code></a>
+            Normal method: <a href="/v2/job/#job-put"><code>translate/job/{id} (PUT)</code></a>
         </p>
     </figcaption></figure><h3 id="job-rejection-panel">Job rejection panel</h3>
 
@@ -404,7 +404,7 @@ Change “Reject” button to “Reject and reopen”, and add a “Reject and c
             A job rejection panel wireframe
         </p>
         <p>
-            Normal method: <a href="/v2/job/put-job-id"><code>translate/job/{id} (PUT) reject</code></a>
+            Normal method: <a href="/v2/job/#job-put"><code>translate/job/{id} (PUT)</code></a>
         </p>
     </figcaption></figure><h3 id="settings-panel">Settings panel</h3>
 
@@ -427,7 +427,7 @@ Change “Reject” button to “Reject and reopen”, and add a “Reject and c
             A remaining credits panel wireframe, allowing the user to top up their credits
         </p>
         <p>
-            Normal method: <a href="/v2/account/balance"><code>account/balance (GET)</code></a>
+            Normal method: <a href="/v2/account/#balance-get"><code>account/balance (GET)</code></a>
         </p>
     </figcaption></figure>
       </div>

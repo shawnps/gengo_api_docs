@@ -18,7 +18,7 @@ __Summary__
 : Returns supported translation language pairs, tiers, and credit prices.
 
 __URL__
-: http://api.mygengo.com/v2/translate/service/language_pairs
+: http://api.gengo.com/v2/translate/service/language_pairs
 
 __Authentication__
 : Not required
@@ -53,7 +53,7 @@ __Summary__
 : Returns a list of supported languages and their language codes.
 
 __URL__
-: http://api.mygengo.com/v2/translate/service/languages
+: http://api.gengo.com/v2/translate/service/languages
 
 __Authentication__
 : Not required
@@ -91,7 +91,7 @@ __Summary__
 : Returns credit quote and unit count for text based on content, tier, and language pair for job or jobs submitted.
 
 __URL__
-: http://api.mygengo.com/v2/translate/service/quote
+: http://api.gengo.com/v2/translate/service/quote
 
 __Authentication__
 : Required
@@ -150,7 +150,7 @@ __Summary__
 : Uploads files to Gengo and returns a quote for each file, with an identifier for when client is ready to place the actual order. Price quote is based on content, tier, and language pair. After using this call, use the identifier return as a parameter in the jobs post method to order the actual job (see Job Payloads ).
 
 __URL__
-: http://api.mygengo.com/v2/translate/service/quote/file
+: http://api.gengo.com/v2/translate/service/quote/file
 
 __Authentication__
 : Required

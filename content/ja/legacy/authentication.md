@@ -37,7 +37,7 @@ example: "food=steak&cuisine=french&drink=wine" sorts to "cuisine=french&drink=w
     $private_key = '$Z)YI=@ndYn@]zpu=AqOc=I}pGQZ';
     $hmac = hash_hmac('sha1', json_encode($params), $private_key);
     $params['api_sig'] = $hmac;
-    $url = 'http://api.mygengo.com/v1/translate/job/20/comment'
+    $url = 'http://api.gengo.com/v1/translate/job/20/comment'
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL, $url);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);

@@ -23,7 +23,7 @@ __Summary__
 : Retrieves a specific job.
 
 __URL__
-: http://api.mygengo.com/v2/translate/job/{id}
+: http://api.gengo.com/v2/translate/job/{id}
 
 __Authentication__
 : Required
@@ -62,7 +62,7 @@ __Summary__
 : Updates a job to translate.
 
 __URL__
-: http://api.mygengo.com/v2/translate/job/{id}
+: http://api.gengo.com/v2/translate/job/{id}
 
 __Authentication__
 : Required
@@ -128,7 +128,7 @@ __Summary__
 : Cancels the job. You can only cancel a job if it has not been started already by a translator.
 
 __URL__
-: http://api.mygengo.com/v2/translate/job/{id}
+: http://api.gengo.com/v2/translate/job/{id}
 
 __Authentication__
 : Required
@@ -165,7 +165,7 @@ __Summary__
 : Renders a JPEG preview image of the translated text.
 
 __URL__
-: http://api.mygengo.com/v2/translate/job/{id}/preview
+: http://api.gengo.com/v2/translate/job/{id}/preview
 
 __Authentication__
 : Required
@@ -203,7 +203,7 @@ __Summary__
 : Gets list of revision resources for a job. Revisions are created each time a translator or Senior Translator updates the text.
 
 __URL__
-: http://api.mygengo.com/v2/translate/job/{id}/revisions
+: http://api.gengo.com/v2/translate/job/{id}/revisions
 
 __Authentication__
 : Required
@@ -240,7 +240,7 @@ __Summary__
 : Gets a specific revision for a job.
 
 __URL__
-: http://api.mygengo.com/v2/translate/job/{id}/revision/{rev_id}
+: http://api.gengo.com/v2/translate/job/{id}/revision/{rev_id}
 
 __Authentication__
 : Required
@@ -279,7 +279,7 @@ __Summary__
 : Retrieves the feedback you have submitted for a particular job.
 
 __URL__
-: http://api.mygengo.com/v2/translate/job/{id}/feedback
+: http://api.gengo.com/v2/translate/job/{id}/feedback
 
 __Authentication__
 : Required
@@ -316,7 +316,7 @@ __Summary__
 : Retrieves the comment thread for a job.
 
 __URL__
-: http://api.mygengo.com/v2/translate/job/{id}/comments
+: http://api.gengo.com/v2/translate/job/{id}/comments
 
 __Authentication__
 : Required
@@ -357,7 +357,7 @@ __Summary__
 : Submits a new comment to the job's comment thread.
 
 __URL__
-: http://api.mygengo.com/v2/translate/job/{id}/comment
+: http://api.gengo.com/v2/translate/job/{id}/comment
 
 __Authentication__
 : Required

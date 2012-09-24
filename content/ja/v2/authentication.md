@@ -37,7 +37,7 @@ All authenticated calls must be signed. The process for signing is as follows:
     $private_key = '$Z)YI=@ndYn@]zpu=AqOc=I}pGQZ';
     $hmac = hash_hmac('sha1', $params['ts'], $private_key);
     $params['api_sig'] = $hmac;
-    $url = 'http://api.mygengo.com/v1/translate/job/20/comment'
+    $url = 'http://api.gengo.com/v1/translate/job/20/comment'
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL, $url);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);

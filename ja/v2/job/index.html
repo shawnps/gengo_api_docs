@@ -72,7 +72,7 @@
 <dt><strong>Summary</strong></dt>
   <dd>Retrieves a specific job.</dd>
   <dt><strong>URL</strong></dt>
-  <dd>http://api.mygengo.com/v2/translate/job/{id}</dd>
+  <dd>http://api.gengo.com/v2/translate/job/{id}</dd>
   <dt><strong>Authentication</strong></dt>
   <dd>Required</dd>
   <dt><strong>Parameters</strong></dt>
@@ -131,7 +131,7 @@ gengo.getTranslationJob(id = 42, pre_mt = 1)
 <dt><strong>Summary</strong></dt>
   <dd>Updates a job to translate.</dd>
   <dt><strong>URL</strong></dt>
-  <dd>http://api.mygengo.com/v2/translate/job/{id}</dd>
+  <dd>http://api.gengo.com/v2/translate/job/{id}</dd>
   <dt><strong>Authentication</strong></dt>
   <dd>Required</dd>
   <dt>
@@ -220,7 +220,7 @@ gengo.updateTranslationJob(
 <dt><strong>Summary</strong></dt>
   <dd>Cancels the job. You can only cancel a job if it has not been started already by a translator.</dd>
   <dt><strong>URL</strong></dt>
-  <dd>http://api.mygengo.com/v2/translate/job/{id}</dd>
+  <dd>http://api.gengo.com/v2/translate/job/{id}</dd>
   <dt><strong>Authentication</strong></dt>
   <dd>Required</dd>
   <dt><strong>Parameters</strong></dt>
@@ -264,7 +264,7 @@ gengo.deleteTranslationJob(id = 42)
 <dt><strong>Summary</strong></dt>
   <dd>Renders a JPEG preview image of the translated text.</dd>
   <dt><strong>URL</strong></dt>
-  <dd>http://api.mygengo.com/v2/translate/job/{id}/preview</dd>
+  <dd>http://api.gengo.com/v2/translate/job/{id}/preview</dd>
   <dt><strong>Authentication</strong></dt>
   <dd>Required</dd>
   <dt><strong>Parameters</strong></dt>
@@ -303,7 +303,7 @@ gengo.getTranslationJobPreview(id = 42)
 <dt><strong>Summary</strong></dt>
   <dd>Gets list of revision resources for a job. Revisions are created each time a translator or Senior Translator updates the text.</dd>
   <dt><strong>URL</strong></dt>
-  <dd>http://api.mygengo.com/v2/translate/job/{id}/revisions</dd>
+  <dd>http://api.gengo.com/v2/translate/job/{id}/revisions</dd>
   <dt><strong>Authentication</strong></dt>
   <dd>Required</dd>
   <dt><strong>Parameters</strong></dt>
@@ -362,7 +362,7 @@ print gengo.getTranslationJobRevisions(id = 42)
 <dt><strong>Summary</strong></dt>
   <dd>Gets a specific revision for a job.</dd>
   <dt><strong>URL</strong></dt>
-  <dd>http://api.mygengo.com/v2/translate/job/{id}/revision/{rev_id}</dd>
+  <dd>http://api.gengo.com/v2/translate/job/{id}/revision/{rev_id}</dd>
   <dt><strong>Authentication</strong></dt>
   <dd>Required</dd>
   <dt><strong>Parameters</strong></dt>
@@ -411,7 +411,7 @@ print gengo.getTranslationJobRevision(id = 42, rev_id = 1)
 <dt><strong>Summary</strong></dt>
   <dd>Retrieves the feedback you have submitted for a particular job.</dd>
   <dt><strong>URL</strong></dt>
-  <dd>http://api.mygengo.com/v2/translate/job/{id}/feedback</dd>
+  <dd>http://api.gengo.com/v2/translate/job/{id}/feedback</dd>
   <dt><strong>Authentication</strong></dt>
   <dd>Required</dd>
   <dt><strong>Parameters</strong></dt>
@@ -458,7 +458,7 @@ print gengo.getTranslationJobFeedback(id = 42)
 <dt><strong>Summary</strong></dt>
   <dd>Retrieves the comment thread for a job.</dd>
   <dt><strong>URL</strong></dt>
-  <dd>http://api.mygengo.com/v2/translate/job/{id}/comments</dd>
+  <dd>http://api.gengo.com/v2/translate/job/{id}/comments</dd>
   <dt><strong>Authentication</strong></dt>
   <dd>Required</dd>
   <dt><strong>Parameters</strong></dt>
@@ -516,7 +516,7 @@ print gengo.getTranslationJobComments(id = 42)
 <dt><strong>Summary</strong></dt>
   <dd>Submits a new comment to the job’s comment thread.</dd>
   <dt><strong>URL</strong></dt>
-  <dd>http://api.mygengo.com/v2/translate/job/{id}/comment</dd>
+  <dd>http://api.gengo.com/v2/translate/job/{id}/comment</dd>
   <dt><strong>Authentication</strong></dt>
   <dd>Required</dd>
   <dt><strong>Parameters</strong></dt>

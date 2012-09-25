@@ -14,7 +14,7 @@ __Summary__
 : Retrieves a group of jobs that were previously submitted together by their order id.
 
 __URL__
-: http://api.mygengo.com/v2/translate/order/{order_id}
+: http://api.gengo.com/v2/translate/order/{order_id}
 
 __Authentication__
 : Required

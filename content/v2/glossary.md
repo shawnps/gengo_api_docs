@@ -16,7 +16,7 @@ __Summary__
 : Retrieves a list of glossaries that belongs to the authenticated user
 
 __URL__
-: http://api.mygengo.com/v2/translate/glossary
+: http://api.gengo.com/v2/translate/glossary
 
 __Authentication__
 : Required
@@ -52,7 +52,7 @@ __Summary__
 : Retreives a glossary by Id
 
 __URL__
-: http://api.mygengo.com/v2/translate/glossary/{glossary_id}
+: http://api.gengo.com/v2/translate/glossary/{glossary_id}
 
 __Authentication__
 : Required

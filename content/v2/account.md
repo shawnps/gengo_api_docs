@@ -15,7 +15,7 @@ __Summary__
 : Retrieves account stats, such as orders made.
 
 __URL__
-: http://api.mygengo.com/v2/account/stats
+: http://api.gengo.com/v2/account/stats
 
 __Authentication__
 : Required
@@ -52,7 +52,7 @@ __Summary__
 : Retrieves account balance in credits.
 
 __URL__
-: http://api.mygengo.com/v2/account/balance
+: http://api.gengo.com/v2/account/balance
 
 __Authentication__
 : Required

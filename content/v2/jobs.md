@@ -18,7 +18,7 @@ __Summary__
 : Retrieves a group of jobs that were previously submitted together by their group id.
 
 __URL__
-: http://api.mygengo.com/v2/translate/jobs/group/{group_id}
+: http://api.gengo.com/v2/translate/jobs/group/{group_id}
 
 __Authentication__
 : Required
@@ -56,7 +56,7 @@ __Summary__
 : Submits a job or group of jobs to translate.
 
 __URL__
-: http://api.mygengo.com/v2/translate/jobs
+: http://api.gengo.com/v2/translate/jobs
 
 __Authentication__
 : Required
@@ -149,7 +149,7 @@ __Summary__
 : Retrieves a list of resources for the most recent jobs filtered by the given parameters.
 
 __URL__
-: http://api.mygengo.com/v2/translate/jobs
+: http://api.gengo.com/v2/translate/jobs
 
 __Authentication__
 : Required
@@ -197,7 +197,7 @@ __Summary__
 : Retrieves a list of jobs. They are requested by a comma-separated list of job ids.
 
 __URL__
-: http://api.mygengo.com/v2/translate/jobs/{ids}
+: http://api.gengo.com/v2/translate/jobs/{ids}
 
 __Authentication__
 : Required

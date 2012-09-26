@@ -82,6 +82,12 @@
       <dd>Suggested workaround is to get the status of the initial order by <a href="/v2/order/#order-get">querying using the order id</a> or <a href="/v2/callback_urls/">receiving a callback</a>. If this is not possible, please try lazy loading after waiting for at least 5 minutes after the initial order.</dd>
     </dl>
 </li>
+  <li>
+    <dl>
+<dt><em>When using V2, if a non-reachable callback url is set in each job payload in a group of jobs, the jobs will individually take very long to get processed and become available to translator and the customer dashboard (reported 2012-09-27)</em></dt>
+      <dd>Suggested workaround to make sure that the callback url is reachable prior to placing orders.</dd>
+    </dl>
+</li>
 </ul><h2 id="upcoming-changes">Upcoming Changes</h2>
 
 <p><em>2012-09-19</em>

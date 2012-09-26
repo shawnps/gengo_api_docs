@@ -14,7 +14,7 @@ For older versions of the Gengo API, you can view [previous API documentation](/
 
 Also, if you notice any inconsistencies or mistakes in our documentation, please don't hesitate to [contact support](mailto:support@gengo.com?subject=Gengo API Documentation inconsistency) to let us know or, if you feel up to it, issue a pull request to [our Documentation Github repository](https://github.com/mygengo/gengo_api_docs) because it is open source !
 
-## Current known issues (Updated 2012-09-20)
+## Current known issues (Updated 2012-09-27)
 
 Below are a list of current issues that we know exist in our API and are working to resolve. We apologise for any inconvenience that they may cause and appreciate your patience in working around them.
 

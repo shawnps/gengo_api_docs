@@ -24,6 +24,9 @@ Below are a list of current issues that we know exist in our API and are working
 * _Ordering a large batch of jobs and then immediately afterwards ordering the first load again (lazy-loading the order) may result in double charging if the job queue has not finished processing the jobs that were ordered the first time (reported 2012-09-19)_
 : Suggested workaround is to get the status of the initial order by [querying using the order id](/v2/order/#order-get) or [receiving a callback](/v2/callback_urls/). If this is not possible, please try lazy loading after waiting for at least 5 minutes after the initial order.
 
+* _When using V2, if a non-reachable callback url is set in each job payload in a group of jobs, the jobs will individually take very long to get processed and become available to translator and the customer dashboard (reported 2012-09-27)_
+: Suggested workaround to make sure that the callback url is reachable prior to placing orders.
+
 
 ## Upcoming Changes
 

@@ -1,5 +1,7 @@
 ---
 title: Gengo API
+description : API home page
+keywords: Gengo, Translation
 ---
 
 # The Gengo API

@@ -80,8 +80,8 @@ __Data arguments__
         Other parameters:
           * rating (optional) 1 (poor) to 5 (fantastic)
           * for_translator (optional) Comments for the translator
-          * for_mygengo (optional) Comments for myGengo staff (private)
-          * public (optional) 1 (true) / 0 (false, default). Whether myGengo can share this feedback publicly
+          * for_mygengo (optional) Comments for Gengo staff (private)
+          * public (optional) 1 (true) / 0 (false, default). Whether Gengo can share this feedback publicly
       * "reject" - Rejects the translation. Please see our FAQs for details of the rejection process.
         Other parameters
           * reason (required) "quality", "incomplete", "other"

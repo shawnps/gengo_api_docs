@@ -6,7 +6,7 @@
   <meta http-equiv="imagetoolbar" content="false" />
   <meta name="MSSmartTagsPreventParsing" content="true" />
   <title>Payloads | Gengo API</title>
-  <meta name="description" content="Gengo API" />
+  <meta name="description" content="Integrate professional translation with Gengo's Translation API" />
   <meta name="keywords" content="Gengo,Translation,API" />
   <link href="/css/reset.css" rel="stylesheet" type="text/css" />
   <link href="/css/960.css" rel="stylesheet" type="text/css" />
@@ -25,7 +25,7 @@
           <ul class="nav">
             <!-- <li><a href="/">English</a></li>
             <li><a href="/ja/">日本語</a></li> -->
-            <li><a href="mailto:support@gengo.com?subject=GengoAPI">Support</a></li>
+            <li><a href="mailto:support@gengo.com?subject=Question%20about%20Gengo%20API">Support</a></li>
           </ul>
         </div>
         
@@ -44,7 +44,7 @@
           <a href="http://gengo.com/api/" class="link-section-tab link-section-tab-selected">Developers</a>
       </li>
       <li>
-          <a href="http://gengo.com/customers/" class="link-section-tab link-section-tab-last">Customers</a>
+          <a href="http://partners.gengo.com/" class="link-section-tab link-section-tab-last">Customers</a>
       </li>
     </ul>
 </nav>
@@ -98,14 +98,16 @@ tier String. Quality level (“machine”, “standard”, “pro”, or “ultr
 callback_url String. The full URL to which we will send system updates (completed jobs, new comments, etc.).</dd>
   <dt>auto_approve</dt>
   <dd>
-<em>Boolean</em> of whether the job will be automatically approved after translation has completed.</dd>
+<em>1 (true) / 0 (false)</em> of whether the job will be automatically approved after translation has completed.</dd>
   <dt>ctime</dt>
   <dd>
 <em>String</em> of Unix Timestamp for when this job was submitted (by you - not by the translator).</dd>
   <dt>custom_data</dt>
   <dd>
-<em>String</em> of up to 1K of client-specific data that may have been sent when the job was submitted.
-mt This value will be “1” if the text in body_tgt is a machine translation. A machine translation is provided as a convenience while a human translation is pending. You can choose to use or discard the provided translation.</dd>
+<em>String</em> of up to 1K of client-specific data that may have been sent when the job was submitted.</dd>
+  <dt>mt</dt>
+  <dd>
+<em>1 (true) / 0 (false)</em> of whether the content in body_tgt is a machine translation. A machine translation is always provided as a convenience while a human translation is pending.</dd>
 </dl><h2 id="job-payload---for-submissions">Job Payload - For submissions</h2>
 
 <dl>

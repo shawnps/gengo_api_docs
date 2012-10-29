@@ -6,7 +6,7 @@
   <meta http-equiv="imagetoolbar" content="false" />
   <meta name="MSSmartTagsPreventParsing" content="true" />
   <title>Service | Gengo API</title>
-  <meta name="description" content="Gengo API" />
+  <meta name="description" content="Integrate professional translation with Gengo's Translation API" />
   <meta name="keywords" content="Gengo,Translation,API" />
   <link href="/css/reset.css" rel="stylesheet" type="text/css" />
   <link href="/css/960.css" rel="stylesheet" type="text/css" />
@@ -25,7 +25,7 @@
           <ul class="nav">
             <!-- <li><a href="/">English</a></li>
             <li><a href="/ja/">日本語</a></li> -->
-            <li><a href="mailto:support@gengo.com?subject=GengoAPI">Support</a></li>
+            <li><a href="mailto:support@gengo.com?subject=Question%20about%20Gengo%20API">Support</a></li>
           </ul>
         </div>
         
@@ -99,27 +99,27 @@ print gengo.getServiceLanguagePairs()
 <pre class="headers"><code>Status: 200 OK</code></pre>
 
 <pre class="highlight"><code class="language-javascript"><span class="p">{</span>
-  <span class="s2">"opstat"</span><span class="o">:</span> <span class="s2">"ok"</span><span class="p">,</span>
   <span class="s2">"response"</span><span class="o">:</span> <span class="p">[</span>
     <span class="p">{</span>
-      <span class="s2">"lc_src"</span><span class="o">:</span> <span class="s2">"de"</span><span class="p">,</span>
-      <span class="s2">"lc_tgt"</span><span class="o">:</span> <span class="s2">"en"</span><span class="p">,</span>
       <span class="s2">"tier"</span><span class="o">:</span> <span class="s2">"standard"</span><span class="p">,</span>
-      <span class="s2">"unit_price"</span><span class="o">:</span> <span class="s2">"0.0500"</span>
+      <span class="s2">"lc_tgt"</span><span class="o">:</span> <span class="s2">"en"</span><span class="p">,</span>
+      <span class="s2">"unit_price"</span><span class="o">:</span> <span class="s2">"0.0500"</span><span class="p">,</span>
+      <span class="s2">"lc_src"</span><span class="o">:</span> <span class="s2">"de"</span>
     <span class="p">},</span>
     <span class="p">{</span>
-      <span class="s2">"lc_src"</span><span class="o">:</span> <span class="s2">"de"</span><span class="p">,</span>
-      <span class="s2">"lc_tgt"</span><span class="o">:</span> <span class="s2">"en"</span><span class="p">,</span>
       <span class="s2">"tier"</span><span class="o">:</span> <span class="s2">"pro"</span><span class="p">,</span>
-      <span class="s2">"unit_price"</span><span class="o">:</span> <span class="s2">"0.1000"</span>
+      <span class="s2">"lc_tgt"</span><span class="o">:</span> <span class="s2">"en"</span><span class="p">,</span>
+      <span class="s2">"unit_price"</span><span class="o">:</span> <span class="s2">"0.1000"</span><span class="p">,</span>
+      <span class="s2">"lc_src"</span><span class="o">:</span> <span class="s2">"de"</span>
     <span class="p">},</span>
     <span class="p">{</span>
-      <span class="s2">"lc_src"</span><span class="o">:</span> <span class="s2">"de"</span><span class="p">,</span>
-      <span class="s2">"lc_tgt"</span><span class="o">:</span> <span class="s2">"en"</span><span class="p">,</span>
       <span class="s2">"tier"</span><span class="o">:</span> <span class="s2">"ultra"</span><span class="p">,</span>
-      <span class="s2">"unit_price"</span><span class="o">:</span> <span class="s2">"0.1500"</span>
+      <span class="s2">"lc_tgt"</span><span class="o">:</span> <span class="s2">"en"</span><span class="p">,</span>
+      <span class="s2">"unit_price"</span><span class="o">:</span> <span class="s2">"0.1500"</span><span class="p">,</span>
+      <span class="s2">"lc_src"</span><span class="o">:</span> <span class="s2">"de"</span>
     <span class="p">}</span>
-  <span class="p">]</span>
+  <span class="p">],</span>
+  <span class="s2">"opstat"</span><span class="o">:</span> <span class="s2">"ok"</span>
 <span class="p">}</span></code></pre>
 
 <h2 id="languages-get">Languages (GET)</h2>
@@ -164,27 +164,27 @@ print gengo.getServiceLanguages()
 <pre class="headers"><code>Status: 200 OK</code></pre>
 
 <pre class="highlight"><code class="language-javascript"><span class="p">{</span>
-  <span class="s2">"opstat"</span><span class="o">:</span> <span class="s2">"ok"</span><span class="p">,</span>
   <span class="s2">"response"</span><span class="o">:</span> <span class="p">[</span>
     <span class="p">{</span>
-      <span class="s2">"language"</span><span class="o">:</span> <span class="s2">"English"</span><span class="p">,</span>
-      <span class="s2">"localized_name"</span><span class="o">:</span> <span class="s2">"English"</span><span class="p">,</span>
+      <span class="s2">"unit_type"</span><span class="o">:</span> <span class="s2">"word"</span><span class="p">,</span>
       <span class="s2">"lc"</span><span class="o">:</span> <span class="s2">"en"</span><span class="p">,</span>
-      <span class="s2">"unit_type"</span><span class="o">:</span> <span class="s2">"word"</span>
+      <span class="s2">"localized_name"</span><span class="o">:</span> <span class="s2">"English"</span><span class="p">,</span>
+      <span class="s2">"language"</span><span class="o">:</span> <span class="s2">"English"</span>
     <span class="p">},</span>
     <span class="p">{</span>
-      <span class="s2">"language"</span><span class="o">:</span> <span class="s2">"Japanese"</span><span class="p">,</span>
-      <span class="s2">"localized_name"</span><span class="o">:</span> <span class="s2">"日本語"</span><span class="p">,</span>
+      <span class="s2">"unit_type"</span><span class="o">:</span> <span class="s2">"character"</span><span class="p">,</span>
       <span class="s2">"lc"</span><span class="o">:</span> <span class="s2">"ja"</span><span class="p">,</span>
-      <span class="s2">"unit_type"</span><span class="o">:</span> <span class="s2">"character"</span>
+      <span class="s2">"localized_name"</span><span class="o">:</span> <span class="s2">"u65e5u672cu8a9e"</span><span class="p">,</span>
+      <span class="s2">"language"</span><span class="o">:</span> <span class="s2">"Japanese"</span>
     <span class="p">},</span>
     <span class="p">{</span>
-      <span class="s2">"language"</span><span class="o">:</span> <span class="s2">"Spanish (Spain)"</span><span class="p">,</span>
-      <span class="s2">"localized_name"</span><span class="o">:</span> <span class="s2">"Español"</span><span class="p">,</span>
+      <span class="s2">"unit_type"</span><span class="o">:</span> <span class="s2">"word"</span><span class="p">,</span>
       <span class="s2">"lc"</span><span class="o">:</span> <span class="s2">"es"</span><span class="p">,</span>
-      <span class="s2">"unit_type"</span><span class="o">:</span> <span class="s2">"word"</span>
+      <span class="s2">"localized_name"</span><span class="o">:</span> <span class="s2">"Espau00f1ol"</span><span class="p">,</span>
+      <span class="s2">"language"</span><span class="o">:</span> <span class="s2">"Spanish (Spain)"</span>
     <span class="p">}</span>
-  <span class="p">]</span>
+  <span class="p">],</span>
+  <span class="s2">"opstat"</span><span class="o">:</span> <span class="s2">"ok"</span>
 <span class="p">}</span></code></pre>
 
 <h2 id="quote-post">Quote (POST)</h2>
@@ -255,23 +255,23 @@ prints gengo.determineTranslationCost(jobs = jobs_data)
 <pre class="headers"><code>Status: 200 OK</code></pre>
 
 <pre class="highlight"><code class="language-javascript"><span class="p">{</span>
-  <span class="s2">"opstat"</span><span class="o">:</span> <span class="s2">"ok"</span><span class="p">,</span>
   <span class="s2">"response"</span><span class="o">:</span> <span class="p">{</span>
     <span class="s2">"jobs"</span><span class="o">:</span> <span class="p">[</span>
       <span class="p">{</span>
         <span class="s2">"job_1"</span><span class="o">:</span> <span class="p">{</span>
-          <span class="s2">"unit_count"</span><span class="o">:</span> <span class="mi">324</span><span class="p">,</span>
-          <span class="s2">"credits"</span><span class="o">:</span> <span class="mf">16.2</span>
+          <span class="s2">"credits"</span><span class="o">:</span> <span class="mf">16.2</span><span class="p">,</span>
+          <span class="s2">"unit_count"</span><span class="o">:</span> <span class="mi">324</span>
         <span class="p">}</span>
       <span class="p">},</span>
       <span class="p">{</span>
         <span class="s2">"job_2"</span><span class="o">:</span> <span class="p">{</span>
-          <span class="s2">"unit_count"</span><span class="o">:</span> <span class="mi">42</span><span class="p">,</span>
-          <span class="s2">"credits"</span><span class="o">:</span> <span class="mf">4.2</span>
+          <span class="s2">"credits"</span><span class="o">:</span> <span class="mf">4.2</span><span class="p">,</span>
+          <span class="s2">"unit_count"</span><span class="o">:</span> <span class="mi">42</span>
         <span class="p">}</span>
       <span class="p">}</span>
     <span class="p">]</span>
-  <span class="p">}</span>
+  <span class="p">},</span>
+  <span class="s2">"opstat"</span><span class="o">:</span> <span class="s2">"ok"</span>
 <span class="p">}</span></code></pre>
 
 <h2 id="quote-files-post">Quote files (POST)</h2>
@@ -350,46 +350,46 @@ require 'mygengo'
 <pre class="headers"><code>Status: 200 OK</code></pre>
 
 <pre class="highlight"><code class="language-javascript"><span class="p">{</span>
-  <span class="s2">"opstat"</span><span class="o">:</span> <span class="s2">"ok"</span><span class="p">,</span>
   <span class="s2">"response"</span><span class="o">:</span> <span class="p">{</span>
     <span class="s2">"jobs"</span><span class="o">:</span> <span class="p">{</span>
-      <span class="s2">"job_1"</span><span class="o">:</span> <span class="p">{</span>
-        <span class="s2">"unit_count"</span><span class="o">:</span> <span class="mi">0</span><span class="p">,</span>
-        <span class="s2">"credits"</span><span class="o">:</span> <span class="s2">"0.00"</span><span class="p">,</span>
-        <span class="s2">"eta"</span><span class="o">:</span> <span class="mi">0</span><span class="p">,</span>
-        <span class="s2">"currency"</span><span class="o">:</span> <span class="s2">"USD"</span><span class="p">,</span>
-        <span class="s2">"identifier"</span><span class="o">:</span> <span class="s2">"49427e41a1b6cefd7444b0d27ec165e7481658791885e71b7602c6babfc80b77"</span><span class="p">,</span>
-        <span class="s2">"images"</span><span class="o">:</span> <span class="p">[</span>
-
-        <span class="p">],</span>
-        <span class="s2">"type"</span><span class="o">:</span> <span class="s2">"file"</span><span class="p">,</span>
-        <span class="s2">"lc_src"</span><span class="o">:</span> <span class="s2">"en"</span><span class="p">,</span>
-        <span class="s2">"body"</span><span class="o">:</span> <span class="s2">""</span><span class="p">,</span>
-        <span class="s2">"title"</span><span class="o">:</span> <span class="s2">"video_on_demand.txt"</span>
-      <span class="p">},</span>
-      <span class="s2">"job_2"</span><span class="o">:</span> <span class="p">{</span>
-        <span class="s2">"unit_count"</span><span class="o">:</span> <span class="mi">0</span><span class="p">,</span>
-        <span class="s2">"credits"</span><span class="o">:</span> <span class="s2">"0.00"</span><span class="p">,</span>
-        <span class="s2">"eta"</span><span class="o">:</span> <span class="mi">0</span><span class="p">,</span>
-        <span class="s2">"currency"</span><span class="o">:</span> <span class="s2">"USD"</span><span class="p">,</span>
-        <span class="s2">"identifier"</span><span class="o">:</span> <span class="s2">"4fd1551c3a5628f795d645394bfcd0a5442e4e7ae60ad1f163424bdeb8420df4"</span><span class="p">,</span>
-        <span class="s2">"images"</span><span class="o">:</span> <span class="p">[</span>
-
-        <span class="p">],</span>
-        <span class="s2">"type"</span><span class="o">:</span> <span class="s2">"file"</span><span class="p">,</span>
-        <span class="s2">"lc_src"</span><span class="o">:</span> <span class="s2">"en"</span><span class="p">,</span>
-        <span class="s2">"body"</span><span class="o">:</span> <span class="s2">""</span><span class="p">,</span>
-        <span class="s2">"title"</span><span class="o">:</span> <span class="s2">"japanese_file.docx"</span>
-      <span class="p">},</span>
       <span class="s2">"job_3"</span><span class="o">:</span> <span class="p">{</span>
         <span class="s2">"err"</span><span class="o">:</span> <span class="p">{</span>
-          <span class="s2">"code"</span><span class="o">:</span> <span class="mi">1802</span><span class="p">,</span>
           <span class="s2">"filename"</span><span class="o">:</span> <span class="s2">"sushi_en.doc"</span><span class="p">,</span>
+          <span class="s2">"code"</span><span class="o">:</span> <span class="mi">1802</span><span class="p">,</span>
           <span class="s2">"key"</span><span class="o">:</span> <span class="s2">"job_3"</span>
         <span class="p">}</span>
+      <span class="p">},</span>
+      <span class="s2">"job_2"</span><span class="o">:</span> <span class="p">{</span>
+        <span class="s2">"body"</span><span class="o">:</span> <span class="s2">""</span><span class="p">,</span>
+        <span class="s2">"title"</span><span class="o">:</span> <span class="s2">"japanese_file.docx"</span><span class="p">,</span>
+        <span class="s2">"credits"</span><span class="o">:</span> <span class="s2">"0.00"</span><span class="p">,</span>
+        <span class="s2">"unit_count"</span><span class="o">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="s2">"identifier"</span><span class="o">:</span> <span class="s2">"4fd1551c3a5628f795d645394bfcd0a5442e4e7ae60ad1f163424bdeb8420df4"</span><span class="p">,</span>
+        <span class="s2">"currency"</span><span class="o">:</span> <span class="s2">"USD"</span><span class="p">,</span>
+        <span class="s2">"images"</span><span class="o">:</span> <span class="p">[</span>
+
+        <span class="p">],</span>
+        <span class="s2">"lc_src"</span><span class="o">:</span> <span class="s2">"en"</span><span class="p">,</span>
+        <span class="s2">"type"</span><span class="o">:</span> <span class="s2">"file"</span><span class="p">,</span>
+        <span class="s2">"eta"</span><span class="o">:</span> <span class="mi">0</span>
+      <span class="p">},</span>
+      <span class="s2">"job_1"</span><span class="o">:</span> <span class="p">{</span>
+        <span class="s2">"body"</span><span class="o">:</span> <span class="s2">""</span><span class="p">,</span>
+        <span class="s2">"title"</span><span class="o">:</span> <span class="s2">"video_on_demand.txt"</span><span class="p">,</span>
+        <span class="s2">"credits"</span><span class="o">:</span> <span class="s2">"0.00"</span><span class="p">,</span>
+        <span class="s2">"unit_count"</span><span class="o">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="s2">"identifier"</span><span class="o">:</span> <span class="s2">"49427e41a1b6cefd7444b0d27ec165e7481658791885e71b7602c6babfc80b77"</span><span class="p">,</span>
+        <span class="s2">"currency"</span><span class="o">:</span> <span class="s2">"USD"</span><span class="p">,</span>
+        <span class="s2">"images"</span><span class="o">:</span> <span class="p">[</span>
+
+        <span class="p">],</span>
+        <span class="s2">"lc_src"</span><span class="o">:</span> <span class="s2">"en"</span><span class="p">,</span>
+        <span class="s2">"type"</span><span class="o">:</span> <span class="s2">"file"</span><span class="p">,</span>
+        <span class="s2">"eta"</span><span class="o">:</span> <span class="mi">0</span>
       <span class="p">}</span>
     <span class="p">}</span>
-  <span class="p">}</span>
+  <span class="p">},</span>
+  <span class="s2">"opstat"</span><span class="o">:</span> <span class="s2">"ok"</span>
 <span class="p">}</span></code></pre>
       </div>
 

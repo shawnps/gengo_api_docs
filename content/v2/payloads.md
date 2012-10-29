@@ -44,14 +44,16 @@ eta
 callback_url String. The full URL to which we will send system updates (completed jobs, new comments, etc.).
 
 auto_approve
-: _Boolean_ of whether the job will be automatically approved after translation has completed.
+: _1 (true) / 0 (false)_ of whether the job will be automatically approved after translation has completed.
 
 ctime
 : _String_ of Unix Timestamp for when this job was submitted (by you - not by the translator).
 
 custom_data
 : _String_ of up to 1K of client-specific data that may have been sent when the job was submitted.
-mt This value will be "1" if the text in body_tgt is a machine translation. A machine translation is provided as a convenience while a human translation is pending. You can choose to use or discard the provided translation.
+
+mt
+: _1 (true) / 0 (false)_ of whether the content in body_tgt is a machine translation. A machine translation is always provided as a convenience while a human translation is pending.
 
 ##Job Payload - For submissions
 

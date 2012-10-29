@@ -12,7 +12,7 @@ task :publish => [:clean] do
   sh "nanoc compile"
 
   ENV['GIT_DIR'] = File.expand_path(`git rev-parse --git-dir`.chomp)
-  old_sha = `git rev-parse refs/remotes/origin/gh-pages`.chomp
+  old_sha = `git rev-parse refs/remotes/gengo/gh-pages`.chomp
   Dir.chdir('output') do
     ENV['GIT_INDEX_FILE'] = gif = '/tmp/dev.gh.i'
     ENV['GIT_WORK_TREE'] = Dir.pwd
@@ -29,6 +29,6 @@ task :publish => [:clean] do
     puts `git show #{csha} --stat`
     puts "Updating gh-pages from #{old_sha}"
     `git update-ref refs/heads/gh-pages #{csha}`
-    `git push origin gh-pages`
+    `git push gengo gh-pages`
   end
 end

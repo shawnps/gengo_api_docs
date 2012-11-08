@@ -98,10 +98,15 @@ puts @mygengo_client.getTranslationOrderJobs({
 <pre class="headers"><code>Status: 200 OK</code></pre>
 
 <pre class="highlight"><code class="language-javascript"><span class="p">{</span>
+  <span class="s2">"opstat"</span><span class="o">:</span> <span class="s2">"ok"</span><span class="p">,</span>
   <span class="s2">"response"</span><span class="o">:</span> <span class="p">{</span>
     <span class="s2">"order"</span><span class="o">:</span> <span class="p">{</span>
+      <span class="s2">"jobs_pending"</span><span class="o">:</span> <span class="p">[</span>
+        <span class="s2">"989290"</span>
+      <span class="p">],</span>
       <span class="s2">"total_jobs"</span><span class="o">:</span> <span class="s2">"10"</span><span class="p">,</span>
       <span class="s2">"total_credits"</span><span class="o">:</span> <span class="s2">"5.00"</span><span class="p">,</span>
+      <span class="s2">"currency"</span><span class="o">:</span> <span class="s2">"USD"</span><span class="p">,</span>
       <span class="s2">"jobs_available"</span><span class="o">:</span> <span class="p">[</span>
         <span class="s2">"989291"</span><span class="p">,</span>
         <span class="s2">"989292"</span><span class="p">,</span>
@@ -112,18 +117,13 @@ puts @mygengo_client.getTranslationOrderJobs({
         <span class="s2">"989297"</span><span class="p">,</span>
         <span class="s2">"989298"</span>
       <span class="p">],</span>
+      <span class="s2">"total_units"</span><span class="o">:</span> <span class="s2">"100"</span><span class="p">,</span>
+      <span class="s2">"as_group"</span><span class="o">:</span> <span class="mi">1</span><span class="p">,</span>
       <span class="s2">"jobs_reviewable"</span><span class="o">:</span> <span class="p">[</span>
         <span class="s2">"989289"</span>
-      <span class="p">],</span>
-      <span class="s2">"total_units"</span><span class="o">:</span> <span class="s2">"100"</span><span class="p">,</span>
-      <span class="s2">"currency"</span><span class="o">:</span> <span class="s2">"USD"</span><span class="p">,</span>
-      <span class="s2">"jobs_pending"</span><span class="o">:</span> <span class="p">[</span>
-        <span class="s2">"989290"</span>
-      <span class="p">],</span>
-      <span class="s2">"as_group"</span><span class="o">:</span> <span class="mi">1</span>
+      <span class="p">]</span>
     <span class="p">}</span>
-  <span class="p">},</span>
-  <span class="s2">"opstat"</span><span class="o">:</span> <span class="s2">"ok"</span>
+  <span class="p">}</span>
 <span class="p">}</span></code></pre>
       </div>
 

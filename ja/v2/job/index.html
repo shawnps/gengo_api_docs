@@ -107,24 +107,24 @@ gengo.getTranslationJob(id = 42, pre_mt = 1)
 <pre class="headers"><code>Status: 200 OK</code></pre>
 
 <pre class="highlight"><code class="language-javascript"><span class="p">{</span>
+  <span class="s2">"opstat"</span><span class="o">:</span> <span class="s2">"ok"</span><span class="p">,</span>
   <span class="s2">"response"</span><span class="o">:</span> <span class="p">{</span>
     <span class="s2">"job"</span><span class="o">:</span> <span class="p">{</span>
-      <span class="s2">"auto_approve"</span><span class="o">:</span> <span class="s2">"0"</span><span class="p">,</span>
-      <span class="s2">"ctime"</span><span class="o">:</span> <span class="mi">1313475693</span><span class="p">,</span>
-      <span class="s2">"body_src"</span><span class="o">:</span> <span class="s2">"plop!"</span><span class="p">,</span>
-      <span class="s2">"tier"</span><span class="o">:</span> <span class="s2">"standard"</span><span class="p">,</span>
-      <span class="s2">"lc_tgt"</span><span class="o">:</span> <span class="s2">"ja"</span><span class="p">,</span>
       <span class="s2">"credits"</span><span class="o">:</span> <span class="s2">"0.05"</span><span class="p">,</span>
-      <span class="s2">"unit_count"</span><span class="o">:</span> <span class="s2">"1"</span><span class="p">,</span>
-      <span class="s2">"slug"</span><span class="o">:</span> <span class="s2">"APIJobtest"</span><span class="p">,</span>
-      <span class="s2">"job_id"</span><span class="o">:</span> <span class="s2">"384985"</span><span class="p">,</span>
+      <span class="s2">"body_src"</span><span class="o">:</span> <span class="s2">"plop!"</span><span class="p">,</span>
+      <span class="s2">"custom_data"</span><span class="o">:</span> <span class="s2">"1234567"</span><span class="p">,</span>
+      <span class="s2">"tier"</span><span class="o">:</span> <span class="s2">"standard"</span><span class="p">,</span>
+      <span class="s2">"ctime"</span><span class="o">:</span> <span class="mi">1313475693</span><span class="p">,</span>
+      <span class="s2">"eta"</span><span class="o">:</span> <span class="s2">""</span><span class="p">,</span>
       <span class="s2">"status"</span><span class="o">:</span> <span class="s2">"available"</span><span class="p">,</span>
       <span class="s2">"lc_src"</span><span class="o">:</span> <span class="s2">"en"</span><span class="p">,</span>
-      <span class="s2">"custom_data"</span><span class="o">:</span> <span class="s2">"1234567"</span><span class="p">,</span>
-      <span class="s2">"eta"</span><span class="o">:</span> <span class="s2">""</span>
+      <span class="s2">"job_id"</span><span class="o">:</span> <span class="s2">"384985"</span><span class="p">,</span>
+      <span class="s2">"lc_tgt"</span><span class="o">:</span> <span class="s2">"ja"</span><span class="p">,</span>
+      <span class="s2">"auto_approve"</span><span class="o">:</span> <span class="s2">"0"</span><span class="p">,</span>
+      <span class="s2">"unit_count"</span><span class="o">:</span> <span class="s2">"1"</span><span class="p">,</span>
+      <span class="s2">"slug"</span><span class="o">:</span> <span class="s2">"APIJobtest"</span>
     <span class="p">}</span>
-  <span class="p">},</span>
-  <span class="s2">"opstat"</span><span class="o">:</span> <span class="s2">"ok"</span>
+  <span class="p">}</span>
 <span class="p">}</span></code></pre>
 
 <h2 id="job-put">Job (PUT)</h2>
@@ -210,10 +210,10 @@ gengo.updateTranslationJob(
 <pre class="headers"><code>Status: 200 OK</code></pre>
 
 <pre class="highlight"><code class="language-javascript"><span class="p">{</span>
+  <span class="s2">"opstat"</span><span class="o">:</span> <span class="s2">"ok"</span><span class="p">,</span>
   <span class="s2">"response"</span><span class="o">:</span> <span class="p">{</span>
 
-  <span class="p">},</span>
-  <span class="s2">"opstat"</span><span class="o">:</span> <span class="s2">"ok"</span>
+  <span class="p">}</span>
 <span class="p">}</span></code></pre>
 
 <h2 id="job-delete">Job (DELETE)</h2>
@@ -254,10 +254,10 @@ gengo.deleteTranslationJob(id = 42)
 <pre class="headers"><code>Status: 200 OK</code></pre>
 
 <pre class="highlight"><code class="language-javascript"><span class="p">{</span>
+  <span class="s2">"opstat"</span><span class="o">:</span> <span class="s2">"ok"</span><span class="p">,</span>
   <span class="s2">"response"</span><span class="o">:</span> <span class="p">{</span>
 
-  <span class="p">},</span>
-  <span class="s2">"opstat"</span><span class="o">:</span> <span class="s2">"ok"</span>
+  <span class="p">}</span>
 <span class="p">}</span></code></pre>
 
 <h2 id="preview-get">Preview (GET)</h2>
@@ -337,25 +337,25 @@ print gengo.getTranslationJobRevisions(id = 42)
 <pre class="headers"><code>Status: 200 OK</code></pre>
 
 <pre class="highlight"><code class="language-javascript"><span class="p">{</span>
+  <span class="s2">"opstat"</span><span class="o">:</span> <span class="s2">"ok"</span><span class="p">,</span>
   <span class="s2">"response"</span><span class="o">:</span> <span class="p">{</span>
+    <span class="s2">"job_id"</span><span class="o">:</span> <span class="s2">"..."</span><span class="p">,</span>
     <span class="s2">"revisions"</span><span class="o">:</span> <span class="p">[</span>
       <span class="p">{</span>
-        <span class="s2">"ctime"</span><span class="o">:</span> <span class="s2">"..."</span><span class="p">,</span>
-        <span class="s2">"rev_id"</span><span class="o">:</span> <span class="s2">"..."</span>
+        <span class="s2">"rev_id"</span><span class="o">:</span> <span class="s2">"..."</span><span class="p">,</span>
+        <span class="s2">"ctime"</span><span class="o">:</span> <span class="s2">"..."</span>
       <span class="p">},</span>
       <span class="p">{</span>
-        <span class="s2">"ctime"</span><span class="o">:</span> <span class="s2">"..."</span><span class="p">,</span>
-        <span class="s2">"rev_id"</span><span class="o">:</span> <span class="s2">"..."</span>
+        <span class="s2">"rev_id"</span><span class="o">:</span> <span class="s2">"..."</span><span class="p">,</span>
+        <span class="s2">"ctime"</span><span class="o">:</span> <span class="s2">"..."</span>
       <span class="p">},</span>
       <span class="p">{</span>
-        <span class="s2">"ctime"</span><span class="o">:</span> <span class="s2">"..."</span><span class="p">,</span>
-        <span class="s2">"rev_id"</span><span class="o">:</span> <span class="s2">"..."</span>
+        <span class="s2">"rev_id"</span><span class="o">:</span> <span class="s2">"..."</span><span class="p">,</span>
+        <span class="s2">"ctime"</span><span class="o">:</span> <span class="s2">"..."</span>
       <span class="p">},</span>
       <span class="s2">"..."</span>
-    <span class="p">],</span>
-    <span class="s2">"job_id"</span><span class="o">:</span> <span class="s2">"..."</span>
-  <span class="p">},</span>
-  <span class="s2">"opstat"</span><span class="o">:</span> <span class="s2">"ok"</span>
+    <span class="p">]</span>
+  <span class="p">}</span>
 <span class="p">}</span></code></pre>
 
 <h2 id="revision-get">Revision (GET)</h2>
@@ -396,13 +396,13 @@ print gengo.getTranslationJobRevision(id = 42, rev_id = 1)
 <pre class="headers"><code>Status: 200 OK</code></pre>
 
 <pre class="highlight"><code class="language-javascript"><span class="p">{</span>
+  <span class="s2">"opstat"</span><span class="o">:</span> <span class="s2">"ok"</span><span class="p">,</span>
   <span class="s2">"response"</span><span class="o">:</span> <span class="p">{</span>
     <span class="s2">"revision"</span><span class="o">:</span> <span class="p">{</span>
       <span class="s2">"ctime"</span><span class="o">:</span> <span class="s2">"..."</span><span class="p">,</span>
       <span class="s2">"body_tgt"</span><span class="o">:</span> <span class="s2">"..."</span>
     <span class="p">}</span>
-  <span class="p">},</span>
-  <span class="s2">"opstat"</span><span class="o">:</span> <span class="s2">"ok"</span>
+  <span class="p">}</span>
 <span class="p">}</span></code></pre>
 
 <h2 id="feedback-get">Feedback (GET)</h2>
@@ -445,13 +445,13 @@ print gengo.getTranslationJobFeedback(id = 42)
 <pre class="headers"><code>Status: 200 OK</code></pre>
 
 <pre class="highlight"><code class="language-javascript"><span class="p">{</span>
+  <span class="s2">"opstat"</span><span class="o">:</span> <span class="s2">"ok"</span><span class="p">,</span>
   <span class="s2">"response"</span><span class="o">:</span> <span class="p">{</span>
     <span class="s2">"feedback"</span><span class="o">:</span> <span class="p">{</span>
       <span class="s2">"for_translator"</span><span class="o">:</span> <span class="s2">"..."</span><span class="p">,</span>
       <span class="s2">"rating"</span><span class="o">:</span> <span class="s2">"3.0"</span>
     <span class="p">}</span>
-  <span class="p">},</span>
-  <span class="s2">"opstat"</span><span class="o">:</span> <span class="s2">"ok"</span>
+  <span class="p">}</span>
 <span class="p">}</span></code></pre>
 
 <h2 id="comments-get">Comments (GET)</h2>
@@ -495,21 +495,21 @@ print gengo.getTranslationJobComments(id = 42)
 <pre class="headers"><code>Status: 200 OK</code></pre>
 
 <pre class="highlight"><code class="language-javascript"><span class="p">{</span>
+  <span class="s2">"opstat"</span><span class="o">:</span> <span class="s2">"ok"</span><span class="p">,</span>
   <span class="s2">"response"</span><span class="o">:</span> <span class="p">{</span>
     <span class="s2">"thread"</span><span class="o">:</span> <span class="p">[</span>
       <span class="p">{</span>
+        <span class="s2">"author"</span><span class="o">:</span> <span class="s2">"translator"</span><span class="p">,</span>
         <span class="s2">"ctime"</span><span class="o">:</span> <span class="mi">1266322028</span><span class="p">,</span>
-        <span class="s2">"body"</span><span class="o">:</span> <span class="s2">"...."</span><span class="p">,</span>
-        <span class="s2">"author"</span><span class="o">:</span> <span class="s2">"translator"</span>
+        <span class="s2">"body"</span><span class="o">:</span> <span class="s2">"...."</span>
       <span class="p">},</span>
       <span class="p">{</span>
+        <span class="s2">"author"</span><span class="o">:</span> <span class="s2">"customer"</span><span class="p">,</span>
         <span class="s2">"ctime"</span><span class="o">:</span> <span class="mi">1266324432</span><span class="p">,</span>
-        <span class="s2">"body"</span><span class="o">:</span> <span class="s2">"...."</span><span class="p">,</span>
-        <span class="s2">"author"</span><span class="o">:</span> <span class="s2">"customer"</span>
+        <span class="s2">"body"</span><span class="o">:</span> <span class="s2">"...."</span>
       <span class="p">}</span>
     <span class="p">]</span>
-  <span class="p">},</span>
-  <span class="s2">"opstat"</span><span class="o">:</span> <span class="s2">"ok"</span>
+  <span class="p">}</span>
 <span class="p">}</span></code></pre>
 
 <h2 id="comment-post">Comment (POST)</h2>
@@ -561,10 +561,10 @@ gengo.postTranslationJobComment(
 <pre class="headers"><code>Status: 200 OK</code></pre>
 
 <pre class="highlight"><code class="language-javascript"><span class="p">{</span>
+  <span class="s2">"opstat"</span><span class="o">:</span> <span class="s2">"ok"</span><span class="p">,</span>
   <span class="s2">"response"</span><span class="o">:</span> <span class="p">{</span>
 
-  <span class="p">},</span>
-  <span class="s2">"opstat"</span><span class="o">:</span> <span class="s2">"ok"</span>
+  <span class="p">}</span>
 <span class="p">}</span></code></pre>
       </div>
 

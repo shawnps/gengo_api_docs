@@ -20,7 +20,9 @@ compile '*' do
   filter :erb
   filter :kramdown
   filter :colorize_syntax,
-    :colorizers => {:javascript => :pygmentsrb}
+    :colorizers => {:javascript => :pygmentsrb,
+                    :python => :pygmentsrb,
+                    :ruby => :pygmentsrb}
   layout 'default'
 end
 

@@ -22,6 +22,7 @@ Callback URLs can be assigned per api-key or per job. A callback URL assigned to
 Parameters to callbacks are formatted in JSON and submitted with a POST call. For job-related notifications, a Job Payload will be POSTed inside a parameter named "job" as if it were a response. The following is an example of how a client might receive a callback submission for a job from Gengo:
 
 
+    #!php
     <?php
     if (isset($_POST['job']))
         { $json_data = $_POST['job'];  }
@@ -50,6 +51,8 @@ custom_data
 
 Here's an example of how a client might receive a callback submission for a job comment:
 
+    #!php
+    <?php
     if (isset($_POST['comment']))
         { $json_data = $_POST['comment'];  }
     else
@@ -70,3 +73,4 @@ Here's an example of how a client might receive a callback submission for a job 
         // custom data from job (if any)
         $custom_data = $data->custom_data; // do stuff ...
     }
+    ?>

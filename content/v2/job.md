@@ -35,15 +35,16 @@ __Parameters__
 
 __Example call__
 
+    #!python
     # -*- coding: utf-8 -*-
     #!/usr/bin/python
     from mygengo import MyGengo
 
     # Get an instance of MyGengo to work with...
     gengo = MyGengo(
-        public_key = 'your_public_key',
-        private_key = 'your_private_key',
-        sandbox = True, # possibly false, depending on your dev needs )
+        public_key='your_public_key',
+        private_key='your_private_key',
+        sandbox=True, # possibly false, depending on your dev needs)
 
     # Get the job in question; pre_mt set to 1 will give you a machine translation
     # if the human translation isn't available yet. ;)
@@ -91,15 +92,16 @@ __Data arguments__
 
 __Example call__
 
+    #!python
     # -*- coding: utf-8 -*-
     #!/usr/bin/python
     from mygengo import MyGengo
 
     # Get an instance of MyGengo to work with...
     gengo = MyGengo(
-        public_key = 'your_public_key',
-        private_key = 'your_private_key',
-        sandbox = True, # possibly false, depending on your dev needs
+        public_key='your_public_key',
+        private_key='your_private_key',
+        sandbox=True, # possibly false, depending on your dev needs
         )
 
     # Update a job that has an id of 42, and reject it, cite the reason,
@@ -139,15 +141,16 @@ __Parameters__
 
 __Example call__
 
+    #!python
     # -*- coding: utf-8 -*-
     #!/usr/bin/python
     from mygengo import MyGengo
 
     # Get an instance of MyGengo to work with...
     gengo = MyGengo(
-        public_key = 'your_public_key',
-        private_key = 'your_private_key',
-        sandbox = True, # possibly false, depending on your dev needs )
+        public_key='your_public_key',
+        private_key='your_private_key',
+        sandbox=True, # possibly false, depending on your dev needs )
 
     # Get the job in question; pre_mt set to 1 will give you a machine translation
     # if the human translation isn't available yet. ;)
@@ -182,15 +185,16 @@ In the case of an authentication error, an error response will be returned in JS
 
 __Example call__
 
+    #!python
     # -*- coding: utf-8 -*-
     #!/usr/bin/python
     from mygengo import MyGengo
 
     # Get an instance of MyGengo to work with...
     gengo = MyGengo(
-        public_key = 'your_public_key',
-        private_key = 'your_private_key',
-        sandbox = True, # possibly false, depending on your dev needs
+        public_key='your_public_key',
+        private_key='your_private_key',
+        sandbox=True, # possibly false, depending on your dev needs
         )
 
     # This method is a bit tricky; you can call it like below, but how you treat # the returned data is very much up to you.
@@ -214,15 +218,16 @@ __Parameters__
 
 __Example call__
 
+    #!python
     # -*- coding: utf-8 -*-
     #!/usr/bin/python
     from mygengo import MyGengo
 
     # Get an instance of MyGengo to work with...
     gengo = MyGengo(
-        public_key = 'your_public_key',
-        private_key = 'your_private_key',
-        sandbox = True, # possibly false, depending on your dev needs
+        public_key='your_public_key',
+        private_key='your_private_key',
+        sandbox=True, # possibly false, depending on your dev needs
         )
 
     # Get every revision on a job. Returns a data set, iterate if need be!
@@ -251,15 +256,16 @@ __Parameters__
 
 __Example call__
 
+    #!python
     # -*- coding: utf-8 -*-
     #!/usr/bin/python
     from mygengo import MyGengo
 
     # Get an instance of MyGengo to work with...
     gengo = MyGengo(
-        public_key = 'your_public_key',
-        private_key = 'your_private_key',
-        sandbox = True, # possibly false, depending on your dev needs
+        public_key='your_public_key',
+        private_key='your_private_key',
+        sandbox=True, # possibly false, depending on your dev needs
         )
 
     # Get specific revision
@@ -290,15 +296,16 @@ __Parameters__
 
 __Example call__
 
+    #!python
     # -*- coding: utf-8 -*-
     #!/usr/bin/python
     from mygengo import MyGengo
 
     # Get an instance of MyGengo to work with...
     gengo = MyGengo(
-        public_key = 'your_public_key',
-        private_key = 'your_private_key',
-        sandbox = True, # possibly false, depending on your dev needs
+        public_key='your_public_key',
+        private_key='your_private_key',
+        sandbox=True, # possibly false, depending on your dev needs
         )
 
     # Get feedback given on a job
@@ -330,15 +337,16 @@ __Note__
 
 __Example call__
 
+    #!python
     # -*- coding: utf-8 -*-
     #!/usr/bin/python
     from mygengo import MyGengo
 
     # Get an instance of MyGengo to work with...
     gengo = MyGengo(
-        public_key = 'your_public_key',
-        private_key = 'your_private_key',
-        sandbox = True, # possibly false, depending on your dev needs
+        public_key='your_public_key',
+        private_key='your_private_key',
+        sandbox=True, # possibly false, depending on your dev needs
         )
 
     # Get all the comments on a specific job.
@@ -371,15 +379,16 @@ __Date arguments__
 
 __Example call__
 
+    #!python
     # -*- coding: utf-8 -*-
     #!/usr/bin/python
     from mygengo import MyGengo
 
     # Get an instance of MyGengo to work with...
     gengo = MyGengo(
-        public_key = 'your_public_key',
-        private_key = 'your_private_key',
-        sandbox = True, # possibly false, depending on your dev needs
+        public_key='your_public_key',
+        private_key='your_private_key',
+        sandbox=True, # possibly false, depending on your dev needs
         )
 
     # Post a comment on a specific job; perhaps you have an update for the translator # or something of the sort.

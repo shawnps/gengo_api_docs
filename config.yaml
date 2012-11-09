@@ -40,6 +40,10 @@ data_sources:
     # same as the items root, but applies to layouts rather than items.
     layouts_root: /
 
+    config:
+      encoding: utf-8
+
   -
     type: static
     items_root: /static
+

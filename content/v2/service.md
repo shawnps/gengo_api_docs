@@ -28,19 +28,19 @@ __Parameters__
 
 __Example call__
 
+    #!python
     # -*- coding: utf-8 -*-
     #!/usr/bin/python
     from mygengo import MyGengo
 
     # Get an instance of MyGengo to work with...
     gengo = MyGengo(
-        public_key = 'your_public_key',
-        private_key = 'your_private_key',
-        sandbox = True, # possibly false, depending on your dev needs )
+        public_key='your_public_key',
+        private_key='your_private_key',
+        sandbox=True, # possibly false, depending on your dev needs )
 
     # Useful for figuring out what language paths are supported - e.g, if # we use 'en' below, we'll see what languages we can translate TO from 'en'.
     print gengo.getServiceLanguagePairs()
-
 
 __Response__
 
@@ -66,15 +66,16 @@ __Data arguments__
 
 __Example call__
 
+    #!python
     # -*- coding: utf-8 -*-
     #!/usr/bin/python
     from mygengo import MyGengo
 
     # Get an instance of MyGengo to work with...
     gengo = MyGengo(
-        public_key = 'your_public_key',
-        private_key = 'your_private_key',
-        sandbox = True, # possibly false, depending on your dev needs )
+        public_key='your_public_key',
+        private_key='your_private_key',
+        sandbox=True, # possibly false, depending on your dev needs )
 
     # Get a list of every supported language, with their respective language codes.
     print gengo.getServiceLanguages()
@@ -105,15 +106,16 @@ __Data arguments__
 
 __Example call__
 
+    #!python
     # -*- coding: utf-8 -*-
     #!/usr/bin/python
     from mygengo import MyGengo
 
     # Get an instance of MyGengo to work with...
     gengo = MyGengo(
-        public_key = 'your_public_key',
-        private_key = 'your_private_key',
-        sandbox = True, # possibly false, depending on your dev needs )
+        public_key='your_public_key',
+        private_key='your_private_key',
+        sandbox=True, # possibly false, depending on your dev needs )
 
     jobs_data = {
             'job_1': {
@@ -122,7 +124,7 @@ __Example call__
                 'body_src': 'Testing Gengo API library calls.', # REQUIRED. The text you're translating.
                 'lc_src': 'en', # REQUIRED. source_language_code (see getServiceLanguages() for a list of codes)
                 'lc_tgt': 'ja', # REQUIRED. target_language_code (see getServiceLanguages() for a list of codes)
-                'tier': 'standard', # REQUIRED. tier type ("machine", "standard", "pro", or "ultra")  
+                'tier': 'standard', # REQUIRED. tier type ("machine", "standard", "pro", or "ultra")
                 'auto_approve': 0, # OPTIONAL. Hopefully self explanatory (1 = yes, 0 = no)
                 'comment': 'HEY THERE TRANSLATOR', # OPTIONAL. Comment to leave for translator.
                 'callback_url': 'http://...', # OPTIONAL. Callback URL that updates are sent to.
@@ -145,7 +147,7 @@ __Example call__
     }
 
     # Post over our two jobs, use the same translator for both, don't pay for them
-    prints gengo.determineTranslationCost(jobs = jobs_data)
+    print gengo.determineTranslationCost(jobs=jobs_data)
 
 __Response__
 
@@ -175,6 +177,8 @@ __Data arguments__
 
 __Example call__
 
+
+    #!ruby
     #!/usr/bin/env ruby
 
     require 'mygengo'

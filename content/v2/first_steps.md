@@ -27,8 +27,11 @@ Each public key has a corresponding private key and callback URL. The public key
 
 Copy the public and private keys so you can use them in your application.
 
+    #!php
+    <?php
     $public_key = "rspZJxEnswelpvS0)tdwM]7uPjkcgR%@k_mN[Z1ac_3a=#EN%r=]cKwxq98-XQdK";
     $private_key = "IlUyZP5TISBSxRzEm0mil$L}-0FxeX(24W1d#TkY{qNkh42Q3B}m2)XJi_nYqrl^";
+    ?>
 
 That's it! In the next step we'll show some API calls in action.
 
@@ -37,11 +40,14 @@ That's it! In the next step we'll show some API calls in action.
 ### Basic GET call
 In this tutorial I will demonstrate how to make API calls using some command-line PHP scripts. In all examples, we'll assume the following constant values:
 
+    #!php
+    <?php
     $url = 'http://api.sandbox.mygengo.com/v2/';
     $public_key = "rspZJxEnswelpvS0)tdwM]7uPjkcgR%@k_mN[Z1ac_3a=#EN%r=]cKwxq98-XQdK";
     $private_key = "IlUyZP5TISBSxRzEm0mil$L}-0FxeX(24W1d#TkY{qNkh42Q3B}m2)XJi_nYqrl^";
     $response_type = 'json'; // choose response type; 'json' or 'xml'
     $header = array('Accept: application/'.$response_type);
+    ?>
 
 
 ### Retrieving language pairs
@@ -51,6 +57,8 @@ First we'll make a simple call to retrieve a list of target languages supported 
 So, to retrieve languages Gengo can translate Japanese into, we pass "ja" as the parameter to "translate/service/language_pairs".
 
 
+    #!php
+    <?php
     $query = array('api_key' => $public_key, 'ts' => gmdate('U'), 'lc_src' = 'ja');
     $query = http_build_query($query);
 
@@ -65,6 +73,7 @@ So, to retrieve languages Gengo can translate Japanese into, we pass "ja" as the
     $response = curl_exec($ch);
     curl_close($ch);
     print_r(json_decode($response));
+    ?>
 
 
 Return value:
@@ -83,6 +92,8 @@ Now let's submit some jobs for human translation. The sandbox allows users to qu
 Once that's done, open the example jobs-post.php script and edit fields for two jobs to submit. Add some text to have translated in the 'body_src' field, and check that the source, target, and tier parameters are what we want. We can also send some custom data to associate with each job; this is data specific to your service and won't be touched at any time. Custom data will be returned verbatim whenever the job is requested.
 
 
+    #!php
+    <?php
     $job1 = array(
         'slug' => 'job test 1',
         'body_src' => 'one two three four',
@@ -127,6 +138,7 @@ Once that's done, open the example jobs-post.php script and edit fields for two 
     curl_setopt($ch, CURLOPT_HTTPHEADER, $header);
     $response = curl_exec($ch);
     curl_close($ch);
+    ?>
 
 
 You'll want to review documentation for the "translate/jobs" entry-point to see what other parameters are available, but for this example we will turn job-grouping off (which means different translators can work on each job).

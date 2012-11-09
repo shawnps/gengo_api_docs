@@ -29,19 +29,20 @@ __Parameters__
 
 __Example call__
 
+    #!python
     # -*- coding: utf-8 -*-
     #!/usr/bin/python
     from mygengo import MyGengo
 
     # Get an instance of MyGengo to work with...
     gengo = MyGengo(
-        public_key = 'your_public_key',
-        private_key = 'your_private_key',
-        sandbox = True, # possibly false, depending on your dev needs )
+        public_key='your_public_key',
+        private_key='your_private_key',
+        sandbox=True, # possibly false, depending on your dev needs )
 
     # If you have one job id, but want to get the id of every other job that
     # was submitted with it, you can do this.
-    print gengo.getTranslationJobBatch(id = 42)
+    print gengo.getTranslationJobBatch(id=42)
 
 
 __Response__
@@ -72,6 +73,7 @@ __Data arguments__
 
 __Example call__
 
+    #!python
     # -*- coding: utf-8 -*-
     #!/usr/bin/python
     from mygengo import MyGengo
@@ -79,9 +81,9 @@ __Example call__
     # Get an instance of MyGengo to work with...
 
     gengo = MyGengo(
-        public_key = 'your_public_key',
-        private_key = 'your_private_key',
-        sandbox = True, # possibly false, depending on your dev needs
+        public_key='your_public_key',
+        private_key='your_private_key',
+        sandbox=True, # possibly false, depending on your dev needs
         )
 
     # This is an exhaustive view of this object; chances are your code will never
@@ -94,7 +96,7 @@ __Example call__
                 'body_src': 'Testing Gengo API library calls.', # REQUIRED. The text you're translating.
                 'lc_src': 'en', # REQUIRED. source_language_code (see getServiceLanguages() for a list of codes)
                 'lc_tgt': 'ja', # REQUIRED. target_language_code (see getServiceLanguages() for a list of codes)
-                'tier': 'standard', # REQUIRED. tier type ("machine", "standard", "pro", or "ultra")  
+                'tier': 'standard', # REQUIRED. tier type ("machine", "standard", "pro", or "ultra")
                 'auto_approve': 0, # OPTIONAL. Hopefully self explanatory (1 = yes, 0 = no)
                 'comment': 'HEY THERE TRANSLATOR', # OPTIONAL. Comment to leave for translator.
                 'callback_url': 'http://...', # OPTIONAL. Callback URL that updates are sent to.
@@ -118,7 +120,7 @@ __Example call__
         'allow_fork': 0, # OPTIONAL. 1 (true, default) / 0 (false). Whether jobs unfinished by a translator in a group order should be cancelled automatically, or to manually choose to let another translator try or manually cancel.
     }
     # And now we post them over...
-    prints gengo.postTranslationJobs(jobs = data)
+    prints gengo.postTranslationJobs(jobs=data)
 
 __Response__
 
@@ -180,18 +182,19 @@ __Note__
 
 __Example call__
 
+    #!python
     # -*- coding: utf-8 -*-
     #!/usr/bin/python
     from mygengo import MyGengo
 
     # Get an instance of MyGengo to work with...
     gengo = MyGengo(
-        public_key = 'your_public_key',
-        private_key = 'your_private_key',
-        sandbox = True, # possibly false, depending on your dev needs )
+        public_key='your_public_key',
+        private_key='your_private_key',
+        sandbox=True, # possibly false, depending on your dev needs )
 
     # Think of this as a "search my jobs" method, and it becomes very self-explanatory.
-    print gengo.getTranslationJobs(status = "upaid", count = 15)
+    print gengo.getTranslationJobs(status="upaid", count=15)
 
 
 __Response__
@@ -217,6 +220,7 @@ __Parameters__
 
 __Example call__
 
+    #!ruby
     #!/usr/bin/env ruby
 
     require 'mygengo'

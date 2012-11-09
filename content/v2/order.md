@@ -25,6 +25,7 @@ __Parameters__
 
 __Example call__
 
+    #!ruby
     #!/usr/bin/env ruby
 
     require 'mygengo'

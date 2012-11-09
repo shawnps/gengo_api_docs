@@ -28,19 +28,22 @@ __Parameters__
 
 __Example call__
 
-    # -*- coding: utf-8 -*-
-    #!/usr/bin/python
-    from mygengo import MyGengo
+<pre class="highlight">
+<code class='language-python'>
+# -*- coding: utf-8 -*-
+#!/usr/bin/python
+from mygengo import MyGengo
 
-    # Get an instance of MyGengo to work with...
-    gengo = MyGengo(
-        public_key = 'your_public_key',
-        private_key = 'your_private_key',
-        sandbox = True, # possibly false, depending on your dev needs )
+# Get an instance of MyGengo to work with...
+gengo = MyGengo(
+    public_key = 'your_public_key',
+    private_key = 'your_private_key',
+    sandbox = True, # possibly false, depending on your dev needs )
 
-    # Useful for figuring out what language paths are supported - e.g, if # we use 'en' below, we'll see what languages we can translate TO from 'en'.
-    print gengo.getServiceLanguagePairs()
-
+# Useful for figuring out what language paths are supported - e.g, if # we use 'en' below, we'll see what languages we can translate TO from 'en'.
+print gengo.getServiceLanguagePairs()
+</code>
+</pre>
 
 __Response__
 
@@ -66,18 +69,22 @@ __Data arguments__
 
 __Example call__
 
-    # -*- coding: utf-8 -*-
-    #!/usr/bin/python
-    from mygengo import MyGengo
+<pre class="highlight">
+<code class='language-python'>
+# -*- coding: utf-8 -*-
+#!/usr/bin/python
+from mygengo import MyGengo
 
-    # Get an instance of MyGengo to work with...
-    gengo = MyGengo(
-        public_key = 'your_public_key',
-        private_key = 'your_private_key',
-        sandbox = True, # possibly false, depending on your dev needs )
+# Get an instance of MyGengo to work with...
+gengo = MyGengo(
+    public_key='your_public_key',
+    private_key='your_private_key',
+    sandbox=True, # possibly false, depending on your dev needs )
 
-    # Get a list of every supported language, with their respective language codes.
-    print gengo.getServiceLanguages()
+# Get a list of every supported language, with their respective language codes.
+print gengo.getServiceLanguages()
+</code>
+</pre>
 
 
 __Response__
@@ -105,47 +112,51 @@ __Data arguments__
 
 __Example call__
 
-    # -*- coding: utf-8 -*-
-    #!/usr/bin/python
-    from mygengo import MyGengo
+<pre class="highlight">
+<code class='language-python'>
+# -*- coding: utf-8 -*-
+#!/usr/bin/python
+from mygengo import MyGengo
 
-    # Get an instance of MyGengo to work with...
-    gengo = MyGengo(
-        public_key = 'your_public_key',
-        private_key = 'your_private_key',
-        sandbox = True, # possibly false, depending on your dev needs )
+# Get an instance of MyGengo to work with...
+gengo = MyGengo(
+    public_key = 'your_public_key',
+    private_key = 'your_private_key',
+    sandbox = True, # possibly false, depending on your dev needs )
 
-    jobs_data = {
-            'job_1': {
-                'type': 'text', # REQUIRED. Type to translate, you'll probably always put 'text' here.
-                'slug': 'Single :: English to Japanese', # REQUIRED. Slug for internally storing, can be generic.
-                'body_src': 'Testing Gengo API library calls.', # REQUIRED. The text you're translating.
-                'lc_src': 'en', # REQUIRED. source_language_code (see getServiceLanguages() for a list of codes)
-                'lc_tgt': 'ja', # REQUIRED. target_language_code (see getServiceLanguages() for a list of codes)
-                'tier': 'standard', # REQUIRED. tier type ("machine", "standard", "pro", or "ultra")  
-                'auto_approve': 0, # OPTIONAL. Hopefully self explanatory (1 = yes, 0 = no)
-                'comment': 'HEY THERE TRANSLATOR', # OPTIONAL. Comment to leave for translator.
-                'callback_url': 'http://...', # OPTIONAL. Callback URL that updates are sent to.
-                'custom_data': 'your optional custom data, limited to 1kb.' # OPTIONAL
-            },
-            'job_2': {
-                'type': 'text', # REQUIRED. Type to translate, you'll probably always put 'text' here.
-                'slug': 'Single :: English to Japanese', # REQUIRED. Slug for internally storing, can be generic.
-                'body_src': 'Testing Gengo API library calls.', # REQUIRED. The text you're translating.
-                'lc_src': 'en', # REQUIRED. source_language_code (see getServiceLanguages() for a list of codes)
-                'lc_tgt': 'ja', # REQUIRED. target_language_code (see getServiceLanguages() for a list of codes)
-                'tier': 'standard', # REQUIRED. tier type ("machine", "standard", "pro", or "ultra")
-                'auto_approve': 0, # OPTIONAL. Hopefully self explanatory (1 = yes, 0 = no)
-                'comment': 'HEY THERE TRANSLATOR', # OPTIONAL. Comment to leave for translator.
-                'callback_url': 'http://...', # OPTIONAL. Callback URL that updates are sent to.
-                'custom_data':'your optional custom data, limited to 1kb.' # OPTIONAL
-            },
-            ...
-            'as_group': 1, # OPTIONAL. 1 (true) / 0 (false, default). Whether all jobs in this group should be done by one translator.
-    }
+jobs_data = {
+        'job_1': {
+            'type': 'text', # REQUIRED. Type to translate, you'll probably always put 'text' here.
+            'slug': 'Single :: English to Japanese', # REQUIRED. Slug for internally storing, can be generic.
+            'body_src': 'Testing Gengo API library calls.', # REQUIRED. The text you're translating.
+            'lc_src': 'en', # REQUIRED. source_language_code (see getServiceLanguages() for a list of codes)
+            'lc_tgt': 'ja', # REQUIRED. target_language_code (see getServiceLanguages() for a list of codes)
+            'tier': 'standard', # REQUIRED. tier type ("machine", "standard", "pro", or "ultra")  
+            'auto_approve': 0, # OPTIONAL. Hopefully self explanatory (1 = yes, 0 = no)
+            'comment': 'HEY THERE TRANSLATOR', # OPTIONAL. Comment to leave for translator.
+            'callback_url': 'http://...', # OPTIONAL. Callback URL that updates are sent to.
+            'custom_data': 'your optional custom data, limited to 1kb.' # OPTIONAL
+        },
+        'job_2': {
+            'type': 'text', # REQUIRED. Type to translate, you'll probably always put 'text' here.
+            'slug': 'Single :: English to Japanese', # REQUIRED. Slug for internally storing, can be generic.
+            'body_src': 'Testing Gengo API library calls.', # REQUIRED. The text you're translating.
+            'lc_src': 'en', # REQUIRED. source_language_code (see getServiceLanguages() for a list of codes)
+            'lc_tgt': 'ja', # REQUIRED. target_language_code (see getServiceLanguages() for a list of codes)
+            'tier': 'standard', # REQUIRED. tier type ("machine", "standard", "pro", or "ultra")
+            'auto_approve': 0, # OPTIONAL. Hopefully self explanatory (1 = yes, 0 = no)
+            'comment': 'HEY THERE TRANSLATOR', # OPTIONAL. Comment to leave for translator.
+            'callback_url': 'http://...', # OPTIONAL. Callback URL that updates are sent to.
+            'custom_data':'your optional custom data, limited to 1kb.' # OPTIONAL
+        },
+        ...
+        'as_group': 1, # OPTIONAL. 1 (true) / 0 (false, default). Whether all jobs in this group should be done by one translator.
+}
 
-    # Post over our two jobs, use the same translator for both, don't pay for them
-    prints gengo.determineTranslationCost(jobs = jobs_data)
+# Post over our two jobs, use the same translator for both, don't pay for them
+print gengo.determineTranslationCost(jobs = jobs_data)
+</code>
+</pre>
 
 __Response__
 
@@ -175,46 +186,51 @@ __Data arguments__
 
 __Example call__
 
-    #!/usr/bin/env ruby
+<pre class="highlight">
+<code class='language-ruby'>
 
-    require 'mygengo'
+#!/usr/bin/env ruby
 
-    @mygengo_client = MyGengo::API.new({
-           :public_key => 'pub_key',
-           :private_key => 'priv_key',
-           :sandbox => false,
-    })
+require 'mygengo'
 
-    @jobs_hash = {
-              :jobs => {
-                :job_1 => {
-                  :type => "file",
-                  :slug => "File posted from API testing suite, DON'T TOUCH 1",
-                  :lc_src => "en",
-                  :lc_tgt => "ja",
-                  :tier => "standard",
-                  :file_path => File.join(Rails.root, "lib", "assets", "video_on_demand.txt")
-                },
-                :job_2 => {
-                  :type => "file",
-                  :slug => "File posted from API testing suite, DON'T TOUCH 2",
-                  :lc_src => "en",
-                  :lc_tgt => "ja",
-                  :tier => "standard",
-                  :file_path => File.join(Rails.root, "lib", "assets", "japanese_file.docx")
-                },
-                :job_3 => {
-                  :type => "file",
-                  :slug => "File posted from API testing suite, DON'T TOUCH 3",
-                  :lc_src => "en",
-                  :lc_tgt => "ja",
-                  :tier => "standard",
-                  :file_path => File.join(Rails.root, "lib", "assets", "test_files", "english", "basics", "sushi_en.doc")
-                }
+@mygengo_client = MyGengo::API.new({
+       :public_key => 'pub_key',
+       :private_key => 'priv_key',
+       :sandbox => false,
+})
+
+@jobs_hash = {
+          :jobs => {
+            :job_1 => {
+              :type => "file",
+              :slug => "File posted from API testing suite, DON'T TOUCH 1",
+              :lc_src => "en",
+              :lc_tgt => "ja",
+              :tier => "standard",
+              :file_path => File.join(Rails.root, "lib", "assets", "video_on_demand.txt")
+            },
+            :job_2 => {
+              :type => "file",
+              :slug => "File posted from API testing suite, DON'T TOUCH 2",
+              :lc_src => "en",
+              :lc_tgt => "ja",
+              :tier => "standard",
+              :file_path => File.join(Rails.root, "lib", "assets", "japanese_file.docx")
+            },
+            :job_3 => {
+              :type => "file",
+              :slug => "File posted from API testing suite, DON'T TOUCH 3",
+              :lc_src => "en",
+              :lc_tgt => "ja",
+              :tier => "standard",
+              :file_path => File.join(Rails.root, "lib", "assets", "test_files", "english", "basics", "sushi_en.doc")
             }
-    }
+        }
+}
 
-    @mygengo_client.determineTranslationCost(@jobs_hash)
+@mygengo_client.determineTranslationCost(@jobs_hash)
+</code>
+</pre>
 
 __Response__
 

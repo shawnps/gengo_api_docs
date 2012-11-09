@@ -120,9 +120,9 @@ from mygengo import MyGengo
 
 # Get an instance of MyGengo to work with...
 gengo = MyGengo(
-    public_key = 'your_public_key',
-    private_key = 'your_private_key',
-    sandbox = True, # possibly false, depending on your dev needs )
+    public_key='your_public_key',
+    private_key='your_private_key',
+    sandbox=True, # possibly false, depending on your dev needs )
 
 jobs_data = {
         'job_1': {
@@ -154,7 +154,7 @@ jobs_data = {
 }
 
 # Post over our two jobs, use the same translator for both, don't pay for them
-print gengo.determineTranslationCost(jobs = jobs_data)
+print gengo.determineTranslationCost(jobs=jobs_data)
 </code>
 </pre>
 

@@ -8,6 +8,7 @@ title: Gengo API Overview
 * [Behind the Scenes](#what-happens-behind-the-scenes)
 * [Methodology](#methodology)
 * [Ordering jobs](#ordering-jobs)
+* [Job statuses](#job-statuses)
 * [Working without a database](#working-without-a-database)
 * [Polling](#polling)
 * [Callbacks](#callbacks)
@@ -49,8 +50,12 @@ The Translate API attempts to follow a [REST-based architecture](http://en.wikip
 
 ## Ordering jobs
 
-To order translation, you should make a [translate/jobs/ (POST)](/v2/jobs/#jobs-post) call. See the method page for details. It's pretty straightforward! When you order jobs, they become "available" which means our translators can view them and start working on them straight away. When a translator picks up a job the status becomes "pending", and when they have finished the translation the status becomes "reviewable". There are two ways to find out if a job has been translated - polling a URL, and assigning a callback.
+To order translation, you should make a [translate/jobs/ (POST)](/v2/jobs/#jobs-post) call. See the method page for details. As a response to this request, Gengo will return back an order_id number and then begin inserting your jobs into our system. At this time, you can make a request to [translate/order/ (GET)](/v2/order/) and check the result of "jobs_queued" to see if your order is processed or not. Alternatively, once a translator starts working on one of the jobs, a callback will be sent - which indicates all jobs are in your system from that order.
 
+
+## Job statuses
+
+Once a job has been added to our system, they are given the status "available" which means our translators can now see them and notifications will be sent out. When a translator picks up a jobthe status becomes "pending" which means a translator is currently working on that job. If the "auto_approve" parameter was set to 0 (false) when the order was placed, the next status the job will change to is "reviewable". At this time you can make a [translate/job/ (PUT)](v2/job/#job-put) call to update the status. However, if the job was ordered with the "auto_approve" paramater set to 1 (true) then the status will be set to "approved" and your translation will be accessible.
 
 ## Working without a database
 

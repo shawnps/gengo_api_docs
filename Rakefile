@@ -5,6 +5,11 @@ task :compile do
   `nanoc compile`
 end
 
+desc "Default task for travis"
+task :default do
+  `nanoc compile`
+end
+
 desc "Publish to http://developers.gengo.com"
 task :publish => [:clean] do
   FileUtils.rm_r('output') if File.exist?('output')

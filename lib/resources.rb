@@ -301,7 +301,8 @@ module GitHub
         ]
     )
 
-    JOBS_BY_IDS_GET = OK_RESPONSE.merge(i 
+    JOBS_BY_IDS_GET = OK_RESPONSE.merge(
+ 
         "response" => {
             "jobs" => [
                 {

@@ -89,7 +89,7 @@ module GitHub
     JOBS_ORDER_GET = OK_RESPONSE.merge(
         "response"=>{
             "order"=>{
-                "order_id", "232",
+                "order_id"=> "232",
                 "total_credits"=>"0.30",
                 "currency"=>"USD",
                 "total_units"=>6,
@@ -98,7 +98,7 @@ module GitHub
                 "jobs_pending"=>[],
                 "jobs_reviewable"=>[],
                 "jobs_approved"=>[],
-                "jobs_queued' => 0,
+                "jobs_queued" => 0,
                 "total_jobs"=>"3"
             }
         }

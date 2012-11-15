@@ -89,11 +89,16 @@ module GitHub
     JOBS_ORDER_GET = OK_RESPONSE.merge(
         "response"=>{
             "order"=>{
+                "order_id", "232",
                 "total_credits"=>"0.30",
                 "currency"=>"USD",
-                "as_group"=>0,
                 "total_units"=>6,
+                "as_group"=>0,
                 "jobs_available"=>["243646", "243647", "243645"],
+                "jobs_pending"=>[],
+                "jobs_reviewable"=>[],
+                "jobs_approved"=>[],
+                "jobs_queued' => 0,
                 "total_jobs"=>"3"
             }
         }
@@ -296,36 +301,41 @@ module GitHub
         ]
     )
 
-    JOBS_BY_IDS_GET = OK_RESPONSE.merge(
-
+    JOBS_BY_IDS_GET = OK_RESPONSE.merge(i 
         "response" => {
             "jobs" => [
                 {
-                    "eta" => "",
-                    "status" => "available",
-                    "auto_approve" => "0",
-                    "lc_tgt" => "ja",
+                    "job_id" => "1",
+                    "body_src" => "This is a short story",
                     "lc_src" => "en",
+                    "lc_tgt" => "jp",
                     "unit_count" => "5",
-                    "body_src" => "This is a short story.",
-                    "credits" => "0.25",
                     "tier" => "standard",
-                    "ctime" => 1317279055,
-                    "job_id" => "1"
+                    "credits" => "0.25",
+                    "currency" => "USD",
+                    "status" => "available",
+                    "eta" => 25308,
+                    "ctime" => 1352879655,
+                    "callback_url" => "http://yourapp.com/gengo_callback/job/1",
+                    "auto_approve" => "1",
+                    "custom_data" => "{internal_id: 2311}"
                 },
                 {
-                    "eta" => "",
-                    "status" => "available",
-                    "auto_approve" => "0",
-                    "lc_tgt" => "ja",
+                    "job_id" => "2",
+                    "body_src" => "This is a short story as well",
                     "lc_src" => "en",
-                    "unit_count" => "5",
-                    "body_src" => "This is a short story.",
-                    "credits" => "0.25",
+                    "lc_tgt" => "jp",
+                    "unit_count" => "7",
                     "tier" => "standard",
-                    "ctime" => 1317279055,
-                    "job_id" => "2"
-                },
+                    "credits" => "0.35",
+                    "currency" => "USD",
+                    "status" => "available",
+                    "eta" => 25308,
+                    "ctime" => 1352879764,
+                    "callback_url" => "http://yourapp.com/gengo_callback/job/2",
+                    "auto_approve" => "1",
+                    "custom_data" => "{internal_id: 2312}"
+                }
             ]
         }
     )

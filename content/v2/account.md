@@ -30,10 +30,10 @@ __Example call__
     # -*- coding: utf-8 -*-
     #!/usr/bin/python
 
-    from mygengo import MyGengo
+    from gengo import Gengo
 
-    # Get an instance of MyGengo to work with...
-    gengo = MyGengo(
+    # Get an instance of Gengo to work with...
+    gengo = Gengo(
         public_key='your_public_key',
         private_key='your_private_key',
         sandbox=False, # possibly false, depending on your dev needs )
@@ -67,10 +67,10 @@ __Example call__
     #!python
     # -*- coding: utf-8 -*-
     #!/usr/bin/python
-    from mygengo import MyGengo
+    from gengo import Gengo
 
-    # Get an instance of MyGengo to work with...
-    gengo = MyGengo(
+    # Get an instance of Gengo to work with...
+    gengo = Gengo(
         public_key='your_public_key',
         private_key='your_private_key',
         sandbox=False, # possibly false, depending on your dev needs

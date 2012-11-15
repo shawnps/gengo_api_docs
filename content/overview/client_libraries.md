@@ -11,7 +11,7 @@ title: Client Libraries | Gengo API
 We provide official client libraries for a few popular programming languages, ready to drop straight into your code. We host them on Github, and encourage you to fork them.
 
  * [PHP](https://github.com/myGengo/mygengo-php)
- * [Python](https://github.com/myGengo/mygengo-python)
+ * [Python](https://github.com/gengo/gengo-python)
  * [Ruby](https://rubygems.org/gems/mygengo)
 
 

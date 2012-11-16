@@ -22,4 +22,4 @@ Each submitted job goes through a series of statuses before delivery. At any tim
 : Translation has been rejected and is no longer available.
 
 `canceled`
-: Translation has been canceled before being pickedup, and is no longer available.
+: Translation has been canceled before being picked up, and is no longer available.

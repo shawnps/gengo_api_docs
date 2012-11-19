@@ -374,7 +374,7 @@ __Parameters__
 : * api_key(required) Your API key.
   * api_sig(required) Your API signature.
 
-__Date arguments__
+__Data arguments__
 : * body(required): The comment body
 
 __Example call__

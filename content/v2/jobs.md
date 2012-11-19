@@ -120,7 +120,7 @@ __Example call__
         'allow_fork': 0, # OPTIONAL. 1 (true, default) / 0 (false). Whether jobs unfinished by a translator in a group order should be cancelled automatically, or to manually choose to let another translator try or manually cancel.
     }
     # And now we post them over...
-    prints gengo.postTranslationJobs(jobs=data)
+    print gengo.postTranslationJobs(jobs=data)
 
 __Response__
 

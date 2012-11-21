@@ -170,7 +170,7 @@ __Parameters__
   * api_sig(required) Your API signature.
 
 __Data arguments__
-: * status(optional): "unpaid", "available", "pending", "reviewable", "approved", "rejected", or "canceled"
+: * status(optional): "available", "pending", "reviewable", "approved", "rejected", or "canceled"
   * timestamp_after(optional): Epoch timestamp from which to filter submitted jobs.
   * count(optional): Defaults to 10. Maximum 200.
 
@@ -194,7 +194,7 @@ __Example call__
         sandbox=True, # possibly false, depending on your dev needs )
 
     # Think of this as a "search my jobs" method, and it becomes very self-explanatory.
-    print gengo.getTranslationJobs(status="unpaid", count=15)
+    print gengo.getTranslationJobs(status="pending", count=15)
 
 
 __Response__

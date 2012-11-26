@@ -157,7 +157,7 @@ __Response__
 ## Quote files (POST)
 
 __Summary__
-: Uploads files to Gengo and returns a quote for each file, with an identifier for when client is ready to place the actual order. Price quote is based on content, tier, and language pair. After using this call, use the identifier return as a parameter in the jobs post method to order the actual job (see Job Payloads ).
+: Uploads files to Gengo and returns a quote for each file, with an identifier for when client is ready to place the actual order. Price quote is based on content, tier, and language pair. After using this call, use the returned identifier as a parameter in the jobs POST method to order the actual job (see Job Payloads).
 
   __Note:__ When uploading files, there is a limit of 50 files per call
 

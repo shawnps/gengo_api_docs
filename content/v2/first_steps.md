@@ -52,19 +52,14 @@ In this tutorial I will demonstrate how to make API calls using some command-lin
 
 ### Retrieving language pairs
 
-First we'll make a simple call to retrieve a list of target languages supported for a given source language, in this case Japanese. The example code creates the required authentication parameters for us, but you will want to read about the [authentication process](/v2/authentication/) in the API documentation.
-
-So, to retrieve languages Gengo can translate Japanese into, we pass "ja" as the parameter to "translate/service/language_pairs".
+First we'll make a simple call to retrieve a list of translation language pairs.
 
 
     #!php
     <?php
-    $query = array('api_key' => $public_key, 'ts' => gmdate('U'), 'lc_src' => 'ja');
+    $query = array('api_key' => $public_key);
     $query = http_build_query($query);
 
-    // calculate the API signature required for this call
-    $hmac = hash_hmac('sha1', $query['ts'], $private_key);
-    $query .= "&api_sig={$hmac}";
     $url .= 'translate/service/language_pairs?' . $query;
 
     $ch = curl_init($url);
@@ -81,7 +76,7 @@ Return value:
 <%= headers 200 %>
 <%= json :lang_pairs %>
 
-What we get back is data about each supported target language for Japanese, including the quality level (or tier) and unit price. Here we see that currently Gengo can translate Japanese into English and Spanish, each at Standard, Pro, and Ultra levels, as well as with machine translation.
+What we get back is data about each supported language pair, including the quality level (or tier) and unit price.
 
 So, that's a very simple example of how to retrieve data through the Gengo Translate API.
 

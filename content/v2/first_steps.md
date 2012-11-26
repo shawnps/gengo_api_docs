@@ -59,7 +59,7 @@ So, to retrieve languages Gengo can translate Japanese into, we pass "ja" as the
 
     #!php
     <?php
-    $query = array('api_key' => $public_key, 'ts' => gmdate('U'), 'lc_src' = 'ja');
+    $query = array('api_key' => $public_key, 'ts' => gmdate('U'), 'lc_src' => 'ja');
     $query = http_build_query($query);
 
     // calculate the API signature required for this call

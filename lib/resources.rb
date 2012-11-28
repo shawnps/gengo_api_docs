@@ -107,7 +107,7 @@ module GitHub
     JOB_GET = OK_RESPONSE.merge(
         {
             "response"=>{
-                "job"=>{
+                "job"={
                     "job_id"=>"384985",
                     "slug"=>"APIJobtest",
                     "body_src"=>"plop!",

@@ -7,7 +7,7 @@ end
 
 desc "Default task for travis"
 task :default do
-  `nanoc compile`
+  sh "nanoc compile"
 end
 
 desc "Publish to http://developers.gengo.com"

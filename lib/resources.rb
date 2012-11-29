@@ -7,8 +7,8 @@ module GitHub
   module Resources
     module Helpers
       STATUSES = {
-        200 => '200 OK',
-        201 => '201 Created',
+        200 = '200 OK',
+        201 = '201 Created',
         202 => '202 Accepted',
         204 => '204 No Content',
         301 => '301 Moved Permanently',

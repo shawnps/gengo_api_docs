@@ -145,12 +145,12 @@ If you have ordered human translation, and are still waiting for the job to be r
 
 If you place an order via the web form, you can retrieve it via the API by using the job ID which is found through your customer dashboard, and use it in calls like <a href='/v2/translate/job-id-get'>translate/job/{id} (GET)</a>. Please note that jobs ordered via the web form do not trigger API callbacks.
 
-You can see jobs placed through the API on the website, on your customer dashboard, by logging into the mygengo.com site.
+You can see jobs placed through the API on the website, on your customer dashboard, by logging into the gengo.com site.
 
 
 ## Using credits
 
-All human translation jobs ordered via the API require up-front payment of Gengo credits. Credits are deducted from your account when you order jobs via a <a href='/v2/translate/jobs'>translate/jobs/ (POST)</a> call (except when you use a tier of "machine" to order machine translation). You can buy credits by logging into the mygengo.com site and visiting your Account page. The current version of the Gengo Translate API requires accounts to maintain a positive credit balance for jobs to be translated.  If there are not enough credits to process a job when it is submitted via the API, the response will indicate this.
+All human translation jobs ordered via the API require up-front payment of Gengo credits. Credits are deducted from your account when you order jobs via a <a href='/v2/translate/jobs'>translate/jobs/ (POST)</a> call (except when you use a tier of "machine" to order machine translation). You can buy credits by logging into the gengo.com site and visiting your Account page. The current version of the Gengo Translate API requires accounts to maintain a positive credit balance for jobs to be translated.  If there are not enough credits to process a job when it is submitted via the API, the response will indicate this.
 
 ## Call Formats
 All API calls require the api_key parameter to be sent.  Authenticated calls must also be signed and sent with the api_sig parameter.  If the call is by POST, parameters specific to the entry-point should be wrapped in a parameter named "data".

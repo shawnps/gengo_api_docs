@@ -80,7 +80,7 @@ If you're not using one of <a href='/overview/client_libraries'>our programming 
 
 Gengo app_name; Version app_version; your_site_url;
 
-The documentation provided by the libraries we offer should give examples on how to provide app information. Any questions related to the libraries themselves can be asked on their respective repositories over at <a href='http://github.com/mygengo'>our GitHub account</a>.
+The documentation provided by the libraries we offer should give examples on how to provide app information. Any questions related to the libraries themselves can be asked on their respective repositories over at <a href='http://github.com/gengo'>our GitHub account</a>.
 
 ## Group jobs that belong together
 

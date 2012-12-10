@@ -17,7 +17,7 @@ Every API call must be authorized using an API key. While you're testing, you sh
 
 First you need to create a free sandbox account. Click "Create a sandbox account" below, enter your email and password, and verify your account through the email sent to you.
 
-[Create a sandbox account](http://sandbox.mygengo.com/sandbox)
+[Create a sandbox account](http://sandbox.gengo.com/sandbox)
 
 After logging in, go to your Account section, and click on "API settings" in the right-hand menu.
 
@@ -42,7 +42,7 @@ In this tutorial I will demonstrate how to make API calls using some command-lin
 
     #!php
     <?php
-    $url = 'http://api.sandbox.mygengo.com/v2/';
+    $url = 'http://api.sandbox.gengo.com/v2/';
     $public_key = "rspZJxEnswelpvS0)tdwM]7uPjkcgR%@k_mN[Z1ac_3a=#EN%r=]cKwxq98-XQdK";
     $private_key = "IlUyZP5TISBSxRzEm0mil$L}-0FxeX(24W1d#TkY{qNkh42Q3B}m2)XJi_nYqrl^";
     $response_type = 'json'; // choose response type; 'json' or 'xml'

@@ -18,9 +18,9 @@ What’s different about the sandbox?
 * Check out the <a href='/'>developer documentation</a>.
 * Create your sandbox account
 * Log in and visit your Account API Keys page to generate a set of sandbox API keys.
-* Test your app, using http://api.sandbox.mygengo.com/v2/ as the base call URL.
+* Test your app, using http://api.sandbox.gengo.com/v2/ as the base call URL.
 * Ready to deploy? Head over to the live <a href='http://gengo.com'>gengo.com</a> site. Create a full user account, generate a set of live API keys - and remember to paste them into your app.
 
 ## Ready? Get started on the sandbox.
 
-Create your <a href='http://sandbox.mygengo.com'>sandbox account</a>
+Create your <a href='http://sandbox.gengo.com'>sandbox account</a>

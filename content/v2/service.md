@@ -31,10 +31,10 @@ __Example call__
     #!python
     # -*- coding: utf-8 -*-
     #!/usr/bin/python
-    from mygengo import MyGengo
+    from gengo import Gengo
 
-    # Get an instance of MyGengo to work with...
-    gengo = MyGengo(
+    # Get an instance of Gengo to work with...
+    gengo = Gengo(
         public_key='your_public_key',
         private_key='your_private_key',
         sandbox=True, # possibly false, depending on your dev needs )
@@ -69,10 +69,10 @@ __Example call__
     #!python
     # -*- coding: utf-8 -*-
     #!/usr/bin/python
-    from mygengo import MyGengo
+    from gengo import Gengo
 
-    # Get an instance of MyGengo to work with...
-    gengo = MyGengo(
+    # Get an instance of Gengo to work with...
+    gengo = Gengo(
         public_key='your_public_key',
         private_key='your_private_key',
         sandbox=True, # possibly false, depending on your dev needs )
@@ -109,10 +109,10 @@ __Example call__
     #!python
     # -*- coding: utf-8 -*-
     #!/usr/bin/python
-    from mygengo import MyGengo
+    from gengo import Gengo
 
-    # Get an instance of MyGengo to work with...
-    gengo = MyGengo(
+    # Get an instance of Gengo to work with...
+    gengo = Gengo(
         public_key='your_public_key',
         private_key='your_private_key',
         sandbox=True, # possibly false, depending on your dev needs )
@@ -157,7 +157,7 @@ __Response__
 ## Quote files (POST)
 
 __Summary__
-: Uploads files to Gengo and returns a quote for each file, with an identifier for when client is ready to place the actual order. Price quote is based on content, tier, and language pair. After using this call, use the identifier return as a parameter in the jobs post method to order the actual job (see Job Payloads ).
+: Uploads files to Gengo and returns a quote for each file, with an identifier for when client is ready to place the actual order. Price quote is based on content, tier, and language pair. After using this call, use the returned identifier as a parameter in the jobs POST method to order the actual job (see Job Payloads).
 
   __Note:__ When uploading files, there is a limit of 50 files per call
 

@@ -1,3 +1,5 @@
+[![Build Status](https://secure.travis-ci.org/myGengo/gengo_api_docs.png?branch=master)](https://travis-ci.org/myGengo/gengo_api_docs)
+
 # Gengo API documentation
 
 This project is forked from the GitHub API resource built with [nanoc][nanoc].

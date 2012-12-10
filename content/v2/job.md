@@ -38,17 +38,17 @@ __Example call__
     #!python
     # -*- coding: utf-8 -*-
     #!/usr/bin/python
-    from mygengo import MyGengo
+    from gengo import Gengo
 
-    # Get an instance of MyGengo to work with...
-    gengo = MyGengo(
+    # Get an instance of Gengo to work with...
+    gengo = Gengo(
         public_key='your_public_key',
         private_key='your_private_key',
         sandbox=True, # possibly false, depending on your dev needs)
 
     # Get the job in question; pre_mt set to 1 will give you a machine translation
     # if the human translation isn't available yet. ;)
-    gengo.getTranslationJob(id = 42, pre_mt = 1)
+    gengo.getTranslationJob(id=42, pre_mt=1)
 
 
 __Response__
@@ -95,10 +95,10 @@ __Example call__
     #!python
     # -*- coding: utf-8 -*-
     #!/usr/bin/python
-    from mygengo import MyGengo
+    from gengo import Gengo
 
-    # Get an instance of MyGengo to work with...
-    gengo = MyGengo(
+    # Get an instance of Gengo to work with...
+    gengo = Gengo(
         public_key='your_public_key',
         private_key='your_private_key',
         sandbox=True, # possibly false, depending on your dev needs
@@ -109,8 +109,8 @@ __Example call__
     # more information pertaining to this method, it can do quite a bit. :)
 
     gengo.updateTranslationJob(
-        id = 42,
-        action = {
+        id=42,
+        action={
             'action': 'reject',
             'reason': 'quality',
             'comment': 'My grandmother does better.',
@@ -144,17 +144,17 @@ __Example call__
     #!python
     # -*- coding: utf-8 -*-
     #!/usr/bin/python
-    from mygengo import MyGengo
+    from gengo import Gengo
 
-    # Get an instance of MyGengo to work with...
-    gengo = MyGengo(
+    # Get an instance of Gengo to work with...
+    gengo = Gengo(
         public_key='your_public_key',
         private_key='your_private_key',
         sandbox=True, # possibly false, depending on your dev needs )
 
     # Get the job in question; pre_mt set to 1 will give you a machine translation
     # if the human translation isn't available yet. ;)
-    gengo.deleteTranslationJob(id = 42)
+    gengo.deleteTranslationJob(id=42)
 
 __Response__
 
@@ -188,17 +188,17 @@ __Example call__
     #!python
     # -*- coding: utf-8 -*-
     #!/usr/bin/python
-    from mygengo import MyGengo
+    from gengo import Gengo
 
-    # Get an instance of MyGengo to work with...
-    gengo = MyGengo(
+    # Get an instance of Gengo to work with...
+    gengo = Gengo(
         public_key='your_public_key',
         private_key='your_private_key',
         sandbox=True, # possibly false, depending on your dev needs
         )
 
     # This method is a bit tricky; you can call it like below, but how you treat # the returned data is very much up to you.
-    gengo.getTranslationJobPreview(id = 42)
+    gengo.getTranslationJobPreview(id=42)
 
 
 ## Revisions (GET)
@@ -221,17 +221,17 @@ __Example call__
     #!python
     # -*- coding: utf-8 -*-
     #!/usr/bin/python
-    from mygengo import MyGengo
+    from gengo import Gengo
 
-    # Get an instance of MyGengo to work with...
-    gengo = MyGengo(
+    # Get an instance of Gengo to work with...
+    gengo = Gengo(
         public_key='your_public_key',
         private_key='your_private_key',
         sandbox=True, # possibly false, depending on your dev needs
         )
 
     # Get every revision on a job. Returns a data set, iterate if need be!
-    print gengo.getTranslationJobRevisions(id = 42)
+    print gengo.getTranslationJobRevisions(id=42)
 
 __Response__
 
@@ -259,17 +259,17 @@ __Example call__
     #!python
     # -*- coding: utf-8 -*-
     #!/usr/bin/python
-    from mygengo import MyGengo
+    from gengo import Gengo
 
-    # Get an instance of MyGengo to work with...
-    gengo = MyGengo(
+    # Get an instance of Gengo to work with...
+    gengo = Gengo(
         public_key='your_public_key',
         private_key='your_private_key',
         sandbox=True, # possibly false, depending on your dev needs
         )
 
     # Get specific revision
-    print gengo.getTranslationJobRevision(id = 42, rev_id = 1)
+    print gengo.getTranslationJobRevision(id=42, rev_id=1)
 
 __Response__
 
@@ -299,17 +299,17 @@ __Example call__
     #!python
     # -*- coding: utf-8 -*-
     #!/usr/bin/python
-    from mygengo import MyGengo
+    from gengo import Gengo
 
-    # Get an instance of MyGengo to work with...
-    gengo = MyGengo(
+    # Get an instance of Gengo to work with...
+    gengo = Gengo(
         public_key='your_public_key',
         private_key='your_private_key',
         sandbox=True, # possibly false, depending on your dev needs
         )
 
     # Get feedback given on a job
-    print gengo.getTranslationJobFeedback(id = 42)
+    print gengo.getTranslationJobFeedback(id=42)
 
 __Response__
 
@@ -340,10 +340,10 @@ __Example call__
     #!python
     # -*- coding: utf-8 -*-
     #!/usr/bin/python
-    from mygengo import MyGengo
+    from gengo import Gengo
 
-    # Get an instance of MyGengo to work with...
-    gengo = MyGengo(
+    # Get an instance of Gengo to work with...
+    gengo = Gengo(
         public_key='your_public_key',
         private_key='your_private_key',
         sandbox=True, # possibly false, depending on your dev needs
@@ -351,7 +351,7 @@ __Example call__
 
     # Get all the comments on a specific job.
     # Note that this returns a data set, so while we just print it below, you'll # inevitably want to iterate over it and such.
-    print gengo.getTranslationJobComments(id = 42)
+    print gengo.getTranslationJobComments(id=42)
 
 __Response__
 
@@ -374,7 +374,7 @@ __Parameters__
 : * api_key(required) Your API key.
   * api_sig(required) Your API signature.
 
-__Date arguments__
+__Data arguments__
 : * body(required): The comment body
 
 __Example call__
@@ -382,10 +382,10 @@ __Example call__
     #!python
     # -*- coding: utf-8 -*-
     #!/usr/bin/python
-    from mygengo import MyGengo
+    from gengo import Gengo
 
-    # Get an instance of MyGengo to work with...
-    gengo = MyGengo(
+    # Get an instance of Gengo to work with...
+    gengo = Gengo(
         public_key='your_public_key',
         private_key='your_private_key',
         sandbox=True, # possibly false, depending on your dev needs
@@ -393,8 +393,8 @@ __Example call__
 
     # Post a comment on a specific job; perhaps you have an update for the translator # or something of the sort.
     gengo.postTranslationJobComment(
-        id = 42,
-        comment = {
+        id=42,
+        comment={
             'body': 'I love lamp!'
         }
     )

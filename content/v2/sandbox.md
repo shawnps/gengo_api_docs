@@ -25,8 +25,4 @@ What’s different about the sandbox?
 
 ## Ready? Get started on the sandbox.
 
-<<<<<<< HEAD
 Create your <a href='http://sandbox.gengo.com'>sandbox account</a>
-=======
-Create your <a href='http://sandbox.mygengo.com'>sandbox account</a>
->>>>>>> master

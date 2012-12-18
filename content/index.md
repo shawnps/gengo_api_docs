@@ -1,7 +1,6 @@
 ---
 title: Translation API | Gengo
-description : Translate and globalize your platform or website with our Translation API. Machine translate for free or
-integrate professional translation for pennies.
+description : Translate and globalize your platform or website with our Translation API. Machine translate for free or integrate professional translation for pennies.
 keywords: Gengo, Translation
 ---
 

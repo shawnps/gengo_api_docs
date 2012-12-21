@@ -74,17 +74,17 @@ __Parameters___
 
 __Data arguments__
 : * action(required):
-      * "revise" - Returns this job back to the translator for revisions
+      * "revise" - Returns this job back to the translator for revisions. 
         Other parameters:
           * comment (required) - The reason to the translator for sending the job back for revisions.
-      * "approve" - Approves job
+      * "approve" - Approves job. 
         Other parameters:
           * rating (optional) 1 (poor) to 5 (fantastic)
           * for_translator (optional) Comments for the translator
           * for_mygengo (optional) Comments for Gengo staff (private)
           * public (optional) 1 (true) / 0 (false, default). Whether Gengo can share this feedback publicly
       * "reject" - Rejects the translation. Please see our FAQs for details of the rejection process.
-        Other parameters
+        Other parameters. 
           * reason (required) "quality", "incomplete", "other"
           * comment (required)
           * captcha (required) The captcha image text. Each job in a "reviewable" state will have a captcha_url value, which is a URL to an image. This captcha value is required only if a job is to be rejected. If the captcha is wrong, a URL for a new captcha is also included with the error message.

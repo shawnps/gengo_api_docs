@@ -63,6 +63,9 @@ Code values let you map your own localized message, and msg values are just samp
 * 1751
 : "custom_data" is over maximum storage limit (1kb)
 
+* 1754
+: system detected an identical payload within a 5 minute window
+
 * 1800
 : jobs is a required field
 

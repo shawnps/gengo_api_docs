@@ -17,7 +17,7 @@ Every API call must be authorized using an API key. While you're testing, you sh
 
 First you need to create a free sandbox account. Click "Create a sandbox account" below, enter your email and password, and verify your account through the email sent to you.
 
-[Create a sandbox account](http://sandbox.gengo.com/sandbox)
+[Create a sandbox account](https://sandbox.gengo.com/auth/form/signup/)
 
 After logging in, go to your Account section, and click on "API settings" in the right-hand menu.
 

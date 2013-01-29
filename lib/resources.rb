@@ -109,6 +109,7 @@ module GitHub
             "response"=>{
                 "job"=>{
                     "job_id"=>"384985",
+                    "order_id"=>"54632",
                     "slug"=>"APIJobtest",
                     "body_src"=>"plop!",
                     "lc_src"=>"en",
@@ -307,6 +308,7 @@ module GitHub
             "jobs" => [
                 {
                     "job_id" => "1",
+                    "order_id"=>"54632",
                     "body_src" => "This is a short story",
                     "lc_src" => "en",
                     "lc_tgt" => "jp",
@@ -324,6 +326,7 @@ module GitHub
                 {
                     "job_id" => "2",
                     "body_src" => "This is a short story as well",
+                    "order_id"=>"54632",
                     "lc_src" => "en",
                     "lc_tgt" => "jp",
                     "unit_count" => "7",
@@ -407,6 +410,7 @@ module GitHub
             "jobs"=>{
                 "job_1"=>{
                     "unit_count"=>0,
+                    "order_id"=>"54632",
                     "credits"=>"0.00",
                     "eta"=>0,
                     "currency"=>"USD",

@@ -26,6 +26,7 @@ __Authentication__
 __Parameters__
 : * api_key(required) Your API key.
   * api_sig(required) Your API signature.
+  * ts(required) Current Unix epoch time as an integer.
 
 __Example call__
 
@@ -65,6 +66,7 @@ __Authentication__
 __Parameters___
 : * api_key(required) Your API key.
   * api_sig(required) Your API signature.
+  * ts(required) Current Unix epoch time as an integer.
 
 __Data arguments__
 : * jobs(required): An array of Job Payloads. Please see the job payloads page for full details of the required parameters.
@@ -170,6 +172,7 @@ __Authentication__
 __Parameters__
 : * api_key(required) Your API key.
   * api_sig(required) Your API signature.
+  * ts(required) Current Unix epoch time as an integer.
 
 __Data arguments__
 : * status(optional): "available", "pending", "reviewable", "approved", "rejected", or "canceled"
@@ -219,6 +222,7 @@ __Authentication__
 __Parameters__
 : * api_key(required) Your API key.
   * api_sig(required) Your API signature.
+  * ts(required) Current Unix epoch time as an integer.
 
 __Example call__
 

@@ -31,6 +31,7 @@ __Authentication__
 __Parameters__
 : * api_key(required) Your API key.
   * api_sig(required) Your API signature.
+  * ts(required) Current Unix epoch time as an integer.
   * pre_mt(optional) 1 (true) / 0 (false, default). Whether to return a machine translation if the human translation is not complete yet.
 
 __Example call__
@@ -71,6 +72,7 @@ __Authentication__
 __Parameters___
 : * api_key(required) Your API key.
   * api_sig(required) Your API signature.
+  * ts(required) Current Unix epoch time as an integer.
 
 __Data arguments__
 : * action(required):
@@ -138,6 +140,7 @@ __Authentication__
 __Parameters__
 : * api_key(required) Your API key.
   * api_sig(required) Your API signature.
+  * ts(required) Current Unix epoch time as an integer.
 
 __Example call__
 
@@ -176,6 +179,7 @@ __Authentication__
 __Parameters__
 : * api_key(required) Your API key.
   * api_sig(required) Your API signature.
+  * ts(required) Current Unix epoch time as an integer.
 
 __Note__
 
@@ -215,6 +219,7 @@ __Authentication__
 __Parameters__
 : * api_key(required) Your API key.
   * api_sig(required) Your API signature.
+  * ts(required) Current Unix epoch time as an integer.
 
 __Example call__
 
@@ -253,6 +258,7 @@ __Authentication__
 __Parameters__
 : * api_key(required) Your API key.
   * api_sig(required) Your API signature.
+  * ts(required) Current Unix epoch time as an integer.
 
 __Example call__
 
@@ -293,6 +299,7 @@ __Authentication__
 __Parameters__
 : * api_key(required) Your API key.
   * api_sig(required) Your API signature.
+  * ts(required) Current Unix epoch time as an integer.
 
 __Example call__
 
@@ -331,6 +338,7 @@ __Authentication__
 __Parameters__
 : * api_key(required) Your API key.
   * api_sig(required) Your API signature.
+  * ts(required) Current Unix epoch time as an integer.
 
 __Note__
 : Possible values for "author" are "translator", "customer", and "senior translator".
@@ -373,6 +381,7 @@ __Authentication__
 __Parameters__
 : * api_key(required) Your API key.
   * api_sig(required) Your API signature.
+  * ts(required) Current Unix epoch time as an integer.
 
 __Data arguments__
 : * body(required): The comment body
